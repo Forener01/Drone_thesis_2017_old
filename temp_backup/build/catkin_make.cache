@@ -1,0 +1,2 @@
+ucl_drone:ucl_drone_gui
+-DCATKIN_DEVEL_PREFIX=/home/laboinmastudent/Bureau/Drone_thesis_2017/Demo-Master_2016/ucl_drone_2016/devel -DCMAKE_INSTALL_PREFIX=/home/laboinmastudent/Bureau/Drone_thesis_2017/Demo-Master_2016/ucl_drone_2016/install -G Unix Makefiles

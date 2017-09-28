@@ -1,0 +1,11 @@
+# Ce qui a été fait
+- Gérer U/D github
+- Lire TFE Leclere/Jacques
+- Lire TFE Schiltz/Gérardy
+- Tutoriel C puis C++
+- Créer son premier noeud ROS - Chap 3
+- Lire "A gentle introduction to ROS": chap 1, 2, 3, 4, 5, 6, 7, 8
+- Lire tutoriels ROS
+- Lire doc ardrone_autonomy
+- Lire TFE Dehem
+- Création code avec commandes de base de contrôle ardrone_autonomy: trajectoire en carré

@@ -1,0 +1,8 @@
+prefix=/home/laboinmastudent/Bureau/Drone_thesis_2017/Demo-Master_2016/ucl_drone_2016/devel
+
+Name: ucl_drone
+Description: Description of ucl_drone
+Version: 0.0.1
+Cflags: -I/home/laboinmastudent/Bureau/Drone_thesis_2017/Demo-Master_2016/ucl_drone_2016/devel/include
+Libs: -L/home/laboinmastudent/Bureau/Drone_thesis_2017/Demo-Master_2016/ucl_drone_2016/devel/lib 
+Requires: message_runtime

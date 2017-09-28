@@ -1,0 +1,8 @@
+prefix=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/install
+
+Name: thesis_aurian
+Description: Description of thesis_aurian
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/install/lib 
+Requires: message_runtime
