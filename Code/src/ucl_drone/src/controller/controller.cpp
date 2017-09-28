@@ -378,49 +378,46 @@ void BasicController::poseRefCb(const ucl_drone::PoseRef::ConstPtr poseRefPtr) {
 // functions are called and
 // their results are sent to the drone.
 void BasicController::controlLoop() {
-  // double xvel_cmd;
-  // double yvel_cmd;
-  // double yawvel_cmd;
-  // double zvel_cmd;
-  //
-  // reguXY(&xvel_cmd, &yvel_cmd, lastPoseReceived.x, lastPoseReceived.y,
-  // lastPoseRefReceived.x,
-  //        lastPoseRefReceived.y, lastPoseReceived.rotZ,
-  //        lastPoseReceived.header.stamp.sec +
-  //        lastPoseReceived.header.stamp.nsec / pow(10, 9));
-  // reguYaw(&yawvel_cmd, lastPoseReceived.rotZ, lastPoseRefReceived.rotZ,
-  //         lastPoseReceived.header.stamp.sec +
-  //         lastPoseReceived.header.stamp.nsec / pow(10, 9));
-  // reguAltitude(&zvel_cmd, lastPoseReceived.z, lastPoseRefReceived.z,
-  //              lastPoseReceived.header.stamp.sec +
-  //              lastPoseReceived.header.stamp.nsec / pow(10, 9));
-  // // sendVelToDrone(0,0,0,zvel_cmd,false);                 //Test
-  // sendVelToDrone(xvel_cmd, yvel_cmd, yawvel_cmd, zvel_cmd, false);  // ALL
-  //
-  // // used if pathplanning asks to stop the control of the drone.
-  // if (lastPoseRefReceived.landAndStop)
-  // {
-  //   std_srvs::Empty::Request req;
-  //   std_srvs::Empty::Response res;
-  //   stopControl(req, res);
-  // }
-  // // used if pathplanning asks to takeoff and start control.
-  // if (lastPoseRefReceived.takeoffAndStart && !isControlling)
-  // {
-  //   // isControlling = true;
-  //   std_srvs::Empty::Request req;
-  //   std_srvs::Empty::Response res;
-  //   startControl(req, res);
-  // }
-  //
-  // // used when user presses the Ctrl-c keys in order to force landing.
-  // if (urgency_signal)  // force landing when Ctrl-C
-  // {
-  //   std_srvs::Empty::Request req;
-  //   std_srvs::Empty::Response res;
-  //   stopControl(req, res);
-  //   ros::shutdown();
-  // }
+  double xvel_cmd;
+  double yvel_cmd;
+  double yawvel_cmd;
+  double zvel_cmd;
+
+  reguXY(&xvel_cmd, &yvel_cmd, lastPoseReceived.x, lastPoseReceived.y,
+         lastPoseRefReceived.x, lastPoseRefReceived.y, lastPoseReceived.rotZ,
+         lastPoseReceived.header.stamp.sec +
+             lastPoseReceived.header.stamp.nsec / pow(10, 9));
+  reguYaw(&yawvel_cmd, lastPoseReceived.rotZ, lastPoseRefReceived.rotZ,
+          lastPoseReceived.header.stamp.sec +
+              lastPoseReceived.header.stamp.nsec / pow(10, 9));
+  reguAltitude(&zvel_cmd, lastPoseReceived.z, lastPoseRefReceived.z,
+               lastPoseReceived.header.stamp.sec +
+                   lastPoseReceived.header.stamp.nsec / pow(10, 9));
+  // sendVelToDrone(0,0,0,zvel_cmd,false);                 //Test
+  sendVelToDrone(xvel_cmd, yvel_cmd, yawvel_cmd, zvel_cmd, false); // ALL
+
+  // used if pathplanning asks to stop the control of the drone.
+  if (lastPoseRefReceived.landAndStop) {
+    std_srvs::Empty::Request req;
+    std_srvs::Empty::Response res;
+    stopControl(req, res);
+  }
+  // used if pathplanning asks to takeoff and start control.
+  if (lastPoseRefReceived.takeoffAndStart && !isControlling) {
+    // isControlling = true;
+    std_srvs::Empty::Request req;
+    std_srvs::Empty::Response res;
+    startControl(req, res);
+  }
+
+  // used when user presses the Ctrl-c keys in order to force landing.
+  if (urgency_signal) // force landing when Ctrl-C
+  {
+    std_srvs::Empty::Request req;
+    std_srvs::Empty::Response res;
+    stopControl(req, res);
+    ros::shutdown();
+  }
 }
 
 //! Override the default behavior when node is killed (ctrl+C)
@@ -429,9 +426,11 @@ static void basicSigintHandler(int sig) { urgency_signal = true; }
 // Main function, launching the controLoop function.
 int main(int argc, char **argv) {
   ros::init(argc, argv, "controller", ros::init_options::NoSigintHandler);
+  ROS_INFO_STREAM("Controller node started!");
+
   signal(SIGINT, basicSigintHandler);
   BasicController bc;
-  ROS_INFO_STREAM("controller started!");
+
   while (ros::ok()) {
     TIC(control);
     bc.controlLoop();

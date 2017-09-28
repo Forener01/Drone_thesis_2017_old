@@ -165,7 +165,8 @@ void PoseEstimator::publish_pose() {
     fusion_is_ok = queuePoseFusion(pose_msg);
   } else {
     ROS_INFO_STREAM_ONCE("NO VISUAL POSE");
-    fusion_is_ok = poseFusion(pose_msg);
+    // fusion_is_ok = poseFusion(pose_msg);
+    fusion_is_ok = poseCopy(pose_msg);
   }
 
   // publish
@@ -402,7 +403,7 @@ int main(int argc, char **argv) {
   // {
   //   ros::console::notifyLoggerLevelsChanged();
   // }
-  ROS_INFO_STREAM("pose_estimation started!");
+  ROS_INFO_STREAM("Pose_estimation node started!");
 
   ros::init(argc, argv, "pose_estimation");
   PoseEstimator myPose;
@@ -421,6 +422,7 @@ int main(int argc, char **argv) {
 
   while (ros::ok()) {
     TIC(pose);
+    ROS_INFO_STREAM_ONCE("Publishing pose !");
     myPose.publish_pose();
     TOC(pose, "pose");
 

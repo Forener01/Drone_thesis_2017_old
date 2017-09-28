@@ -6,6 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(thesis_aurian)
-SUBDIRS(tum_ardrone)
 SUBDIRS(ucl_drone)
 SUBDIRS(ucl_drone_gui)

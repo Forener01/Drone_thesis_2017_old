@@ -66,7 +66,7 @@ PathPlanning::~PathPlanning() {}
 void PathPlanning::reset() {
   next_x = 0;
   next_y = 0;
-  next_z = 1;
+  next_z = 1.0;
   next_rotZ = 0;
   i = 0;
   landing = false;
@@ -306,7 +306,8 @@ void PathPlanning::SetRef(double x_ref, double y_ref, double z_ref,
 // comming from the
 // Strategy node.
 int main(int argc, char **argv) {
-  ROS_INFO_STREAM("poseref_sending started!");
+  ROS_INFO_STREAM("Controller node started!");
+  // ROS_INFO_STREAM("poseref_sending started!");
   ros::init(argc, argv, "path_planning");
   PathPlanning myPath;
   ros::Rate r(20); // Refresh every 1/20 second.
