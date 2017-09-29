@@ -150,7 +150,7 @@ int Strategy::FindRole()
   /* ** Other group's comments: ** */
   // TODO: the drone should wait until a role is attributed ...
   printf("I did not find my role");
-  return 0.0;
+  return 0;
 }
 
 // This function give the position chosen to the object of this function.

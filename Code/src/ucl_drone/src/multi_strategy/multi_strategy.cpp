@@ -32,11 +32,11 @@ void MultiStrategy::init()
 
   // Hardcoded:
   DroneRole role1("ucl_drone_5");
-  role1.SetDroneRole(EXPLORE_UNTIL_TARGET);
+  role1.SetDroneRole(GO_TO);
   role_list.push_back(role1);
-  DroneRole role2("ucl_drone_4");
-  role2.SetDroneRole(GO_TO, "/ucl_drone_5/target_detected/");
-  role_list.push_back(role2);
+  // DroneRole role2("ucl_drone_4");
+  // role2.SetDroneRole(GO_TO, "/ucl_drone_5/target_detected/");
+  // role_list.push_back(role2);
 }
 
 void MultiStrategy::readyCb(const ucl_drone::DroneRole::ConstPtr readyPtr)
