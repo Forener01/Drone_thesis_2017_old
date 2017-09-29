@@ -15,7 +15,7 @@
 PoseEstimator::PoseEstimator()
 {
   // Parameters
-
+  this->use_visual_pose = false;
   ros::param::get("~use_visual_pose",
                   this->use_visual_pose);  // if false, only onboard readings are used
 
@@ -403,11 +403,11 @@ int main(int argc, char** argv)
   ros::Rate r(20);
 
   ROS_DEBUG("pose estimation initialized");
-  while (!myPose.odometry_publishing && ros::ok())
-  {
-    ros::spinOnce();
-    r.sleep();
-  }
+  // while (!myPose.odometry_publishing && ros::ok())
+  // {
+  //   ros::spinOnce();
+  //   r.sleep();
+  // }
 
   ROS_DEBUG("ardrone_driver publishing: ending hibernate");
   myPose.doFlatTrim();
@@ -418,6 +418,7 @@ int main(int argc, char** argv)
   {
     TIC(pose);
     myPose.publish_pose();
+    ROS_INFO_STREAM_ONCE("Pose is publishing !");
     TOC(pose, "pose");
 
     if (myPose.pending_reset)

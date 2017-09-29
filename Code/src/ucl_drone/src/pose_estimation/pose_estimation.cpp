@@ -1,9 +1,4 @@
-/* NON-ORIGINAL FILE
-THIS HAS BEEN MODIFIED IN ORDER TO ONLY TEST THE CONTROLLER PERFORMANCES,
-WITHOUT TAKING ACCOUNT OF THE VISUAL POSE ESTIMATION OR STRATEGY NODES.
-Date: September 2017
-Author of modification: Aurian d'Avernas
-*/
+/* NOT THE ORIGINAL FILE */
 
 /*!
  *  This file is part of ucl_drone 2016.
@@ -21,9 +16,7 @@ Author of modification: Aurian d'Avernas
 // Constructor
 PoseEstimator::PoseEstimator() {
   // Parameters
-
-  this->use_visual_pose = false;
-
+  this->use_visual_pose = true;
   ros::param::get(
       "~use_visual_pose",
       this->use_visual_pose); // if false, only onboard readings are used
@@ -62,7 +55,6 @@ PoseEstimator::PoseEstimator() {
     pose_channel = nh.resolveName("pose_estimation");
     end_reset_pose_channel = nh.resolveName("end_reset_pose");
   } else {
-    ROS_INFO_STREAM_ONCE("NO VISUAL POSE");
     pose_channel = nh.resolveName("blind_pose_estimation");
     end_reset_pose_channel = nh.resolveName("blind_end_reset_pose");
   }
@@ -162,11 +154,12 @@ void PoseEstimator::publish_pose() {
   ucl_drone::Pose3D pose_msg;
   bool fusion_is_ok = false;
   if (this->use_visual_pose) {
-    fusion_is_ok = queuePoseFusion(pose_msg);
-  } else {
-    ROS_INFO_STREAM_ONCE("NO VISUAL POSE");
-    // fusion_is_ok = poseFusion(pose_msg);
+	  ROS_INFO_STREAM_ONCE("Visual pose used !");
+    //fusion_is_ok = queuePoseFusion(pose_msg);
     fusion_is_ok = poseCopy(pose_msg);
+  } else {
+	  ROS_INFO_STREAM_ONCE("Visual pose not used !");
+    fusion_is_ok = poseFusion(pose_msg);
   }
 
   // publish
@@ -403,27 +396,27 @@ int main(int argc, char **argv) {
   // {
   //   ros::console::notifyLoggerLevelsChanged();
   // }
-  ROS_INFO_STREAM("Pose_estimation node started!");
-
   ros::init(argc, argv, "pose_estimation");
   PoseEstimator myPose;
   ros::Rate r(20);
 
   ROS_DEBUG("pose estimation initialized");
-  while (!myPose.odometry_publishing && ros::ok()) {
-    ros::spinOnce();
-    r.sleep();
-  }
-
+  /*while (!myPose.odometry_publishing && ros::ok())
+  {
+	ros::spinOnce();
+	r.sleep();
+  }*/
+  ros::Duration(10).sleep();
+  ROS_INFO_STREAM("pose_estimation node started!");
   ROS_DEBUG("ardrone_driver publishing: ending hibernate");
   myPose.doFlatTrim();
   myPose.doReset();
   ROS_DEBUG("reset done");
-
+	
   while (ros::ok()) {
     TIC(pose);
-    ROS_INFO_STREAM_ONCE("Publishing pose !");
     myPose.publish_pose();
+    ROS_INFO_STREAM_ONCE("Pose is publishing !");
     TOC(pose, "pose");
 
     if (myPose.pending_reset) {

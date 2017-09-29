@@ -458,6 +458,20 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+thesis_aurian/CMakeFiles/simple_square_vel.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
+
+# Convenience name for target.
+simple_square_vel: thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
+.PHONY : simple_square_vel
+
+# fast build rule for target.
+simple_square_vel/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/build
+.PHONY : simple_square_vel/fast
+
+# Convenience name for target.
 thesis_aurian/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : thesis_aurian/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -723,43 +737,29 @@ thesis_aurian_genpy/fast:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build
 .PHONY : thesis_aurian_genpy/fast
 
-# Convenience name for target.
-thesis_aurian/CMakeFiles/trajectories.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/trajectories.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/trajectories.dir/rule
-
-# Convenience name for target.
-trajectories: thesis_aurian/CMakeFiles/trajectories.dir/rule
-.PHONY : trajectories
-
-# fast build rule for target.
-trajectories/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/trajectories.dir/build.make thesis_aurian/CMakeFiles/trajectories.dir/build
-.PHONY : trajectories/fast
-
-src/controller/trajectories.o: src/controller/trajectories.cpp.o
-.PHONY : src/controller/trajectories.o
+src/simple_square_vel.o: src/simple_square_vel.cpp.o
+.PHONY : src/simple_square_vel.o
 
 # target to build an object file
-src/controller/trajectories.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/trajectories.dir/build.make thesis_aurian/CMakeFiles/trajectories.dir/src/controller/trajectories.cpp.o
-.PHONY : src/controller/trajectories.cpp.o
+src/simple_square_vel.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/simple_square_vel.cpp.o
+.PHONY : src/simple_square_vel.cpp.o
 
-src/controller/trajectories.i: src/controller/trajectories.cpp.i
-.PHONY : src/controller/trajectories.i
+src/simple_square_vel.i: src/simple_square_vel.cpp.i
+.PHONY : src/simple_square_vel.i
 
 # target to preprocess a source file
-src/controller/trajectories.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/trajectories.dir/build.make thesis_aurian/CMakeFiles/trajectories.dir/src/controller/trajectories.cpp.i
-.PHONY : src/controller/trajectories.cpp.i
+src/simple_square_vel.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/simple_square_vel.cpp.i
+.PHONY : src/simple_square_vel.cpp.i
 
-src/controller/trajectories.s: src/controller/trajectories.cpp.s
-.PHONY : src/controller/trajectories.s
+src/simple_square_vel.s: src/simple_square_vel.cpp.s
+.PHONY : src/simple_square_vel.s
 
 # target to generate assembly for a file
-src/controller/trajectories.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/trajectories.dir/build.make thesis_aurian/CMakeFiles/trajectories.dir/src/controller/trajectories.cpp.s
-.PHONY : src/controller/trajectories.cpp.s
+src/simple_square_vel.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/simple_square_vel.cpp.s
+.PHONY : src/simple_square_vel.cpp.s
 
 # Help Target
 help:
@@ -795,6 +795,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... simple_square_vel"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
@@ -815,10 +816,9 @@ help:
 	@echo "... thesis_aurian_generate_messages_py"
 	@echo "... thesis_aurian_genlisp"
 	@echo "... thesis_aurian_genpy"
-	@echo "... trajectories"
-	@echo "... src/controller/trajectories.o"
-	@echo "... src/controller/trajectories.i"
-	@echo "... src/controller/trajectories.s"
+	@echo "... src/simple_square_vel.o"
+	@echo "... src/simple_square_vel.i"
+	@echo "... src/simple_square_vel.s"
 .PHONY : help
 
 

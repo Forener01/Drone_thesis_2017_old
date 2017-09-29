@@ -1,12 +1,11 @@
 /*
-This file transmits to the drone the trajectories to take, via ardrone_autonomy
-commands.
+This file transmits to the drone the trajectories with velocity commands,
+via ardrone_autonomy commands, following a square trajectory.
 
 Author: Aurian d'Avernas
-Date: 2017
+Date: september 2017
 */
 
-// #include <thesis_aurian/controller/trajectories.h>
 #include <geometry_msgs/Twist.h>
 #include <ros/ros.h>
 #include <std_msgs/Empty.h>

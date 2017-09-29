@@ -140,7 +140,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/thesis_aurian_node.cpp)
-add_executable(trajectories src/controller/trajectories.cpp)
+add_executable(simple_square_vel src/simple_square_vel.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -157,7 +157,7 @@ add_executable(trajectories src/controller/trajectories.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(trajectories ${catkin_LIBRARIES})
+target_link_libraries(simple_square_vel ${catkin_LIBRARIES})
 
 #############
 ## Install ##

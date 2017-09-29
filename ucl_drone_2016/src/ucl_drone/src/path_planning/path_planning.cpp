@@ -1,3 +1,5 @@
+/* NOT THE ORIGINAL FILE */
+
 /*
  *  This file is part of ucl_drone 2016.
  *  For more information, refer
@@ -40,8 +42,8 @@ PathPlanning::PathPlanning()
   poseref_pub = nh.advertise< ucl_drone::PoseRef >(poseref_channel, 1);
 
   // Just for some tests
-  mapcell_channel = nh.resolveName("mapcell");
-  mapcell_pub = nh.advertise< ucl_drone::cellUpdate >(mapcell_channel, 500);
+  // mapcell_channel = nh.resolveName("mapcell");
+  // mapcell_pub = nh.advertise< ucl_drone::cellUpdate >(mapcell_channel, 500);
 
   // instruction_publishing = false;
 }
@@ -320,122 +322,127 @@ int main(int argc, char** argv)
   myPath.reset();
   myPath.publish_poseref();
   ros::spinOnce();
-  r.sleep();
+  // r.sleep();
   ROS_INFO_STREAM("poseref initialized and launched");
   while (ros::ok())
   {
     TIC(path);
-    if (myPath.lastStrategyReceived.type == 1.0)  // This corresponds to the takeoff strategy.
-    {
-      myPath.takeoff = true;
-      myPath.publish_poseref();
-    }
-
-    // Strategy == 7.0 and == 8.0 are never true. Those numbers are just used to change the response
-    // we want from the pathplanning between 3 different functions. (test - labyrinth - grid). We
-    // just have to put 2.0 to the one we want and other numbers to the others.
-
-    // This function calls the labyrinth pathplanning.
-    else if (myPath.lastStrategyReceived.type == 7.0)
-    {
-      if (myPath.xy_desired() == true)
-      {
-        myPath.takeoff = true;
-        ros::Duration(5).sleep();
-        myPath.publish_poseref();
-      }
-    }
-
-    // Strategy = GOTO, the drone goes directly to the position writed in the message from the
+    // if (myPath.lastStrategyReceived.type == 1.0)  // This corresponds to the takeoff strategy.
+    // {
+    //   myPath.takeoff = true;
+    //   myPath.publish_poseref();
+    // }
+    //
+    // // Strategy == 7.0 and == 8.0 are never true. Those numbers are just used to change the
+    // response
+    // // we want from the pathplanning between 3 different functions. (test - labyrinth - grid). We
+    // // just have to put 2.0 to the one we want and other numbers to the others.
+    //
+    // // This function calls the labyrinth pathplanning.
+    // else if (myPath.lastStrategyReceived.type == 7.0)
+    // {
+    //   if (myPath.xy_desired() == true)
+    //   {
+    //     myPath.takeoff = true;
+    //     ros::Duration(5).sleep();
+    //     myPath.publish_poseref();
+    //   }
+    // }
+    //
+    // // Strategy = GOTO, the drone goes directly to the position writed in the message from the
+    // // strategy.
+    // else if (myPath.lastStrategyReceived.type == 3.0)
+    // {
+    //   myPath.takeoff = true;
+    //   myPath.SetRef(myPath.lastStrategyReceived.x, myPath.lastStrategyReceived.y + 0.5,
+    //                 myPath.next_z,
+    //                 myPath.next_rotZ);  // Pas correct, ne tient pas compte de la
+    //                                     // position du drone maitre
+    //   myPath.publish_poseref();
+    // }
+    //
+    // // Strategy = Land, the drone lands.
+    // else if (myPath.lastStrategyReceived.type == 4.0)
+    // {
+    //   myPath.takeoff = false;
+    //   myPath.landing = true;
+    //   myPath.publish_poseref();
+    // }
+    //
+    // // Strategy = Follow, the drone goes to the coordinates writed in the message from the
     // strategy.
-    else if (myPath.lastStrategyReceived.type == 3.0)
-    {
-      myPath.takeoff = true;
-      myPath.SetRef(myPath.lastStrategyReceived.x, myPath.lastStrategyReceived.y + 0.5,
-                    myPath.next_z,
-                    myPath.next_rotZ);  // Pas correct, ne tient pas compte de la
-                                        // position du drone maitre
-      myPath.publish_poseref();
-    }
-
-    // Strategy = Land, the drone lands.
-    else if (myPath.lastStrategyReceived.type == 4.0)
-    {
-      myPath.takeoff = false;
-      myPath.landing = true;
-      myPath.publish_poseref();
-    }
-
-    // Strategy = Follow, the drone goes to the coordinates writed in the message from the strategy.
-    // Those ones come from the target_detected channel in the strategy node.
-    else if (myPath.lastStrategyReceived.type == 5.0)
-    {
-      myPath.takeoff = true;
-      myPath.SetRef(myPath.lastStrategyReceived.x, myPath.lastStrategyReceived.y, myPath.next_z,
-                    myPath.next_rotZ);
-      myPath.publish_poseref();
-    }
-
-    // Strategy = BackToBase, the drone rises up to 2m in order to avoid the other drone coming to
-    // replace him. Then it goes back to the base and land when it is in a radius of 0.15m from
-    // where it took off.
-    else if (myPath.lastStrategyReceived.type == 6.0)
-    {
-      myPath.next_z = 2;
-      if (sqrt((myPath.lastPoseReceived.x) * (myPath.lastPoseReceived.x) +
-               (myPath.lastPoseReceived.y) * (myPath.lastPoseReceived.y)) < 0.15)
-      {
-        myPath.takeoff = false;
-        myPath.landing = true;
-      }
-      else if (!myPath.landing)
-      {
-        myPath.takeoff = true;
-        myPath.SetRef(0, 0, myPath.next_z, myPath.next_rotZ);
-      }
-      myPath.publish_poseref();
-    }
-
-    // Strategy = Seek (explore), the drone initializes the grid. Then this is the
-    // advanced_xy_desired function that tells the drone where to go.
-    else if (myPath.lastStrategyReceived.type == 2.0)
-    {
-      if (!myPath.gridInitialized)
-      {
-        ROS_INFO("I am initializing the grid");
-
-        myPath.InitializeGrid();
-      }
-
-      myPath.takeoff = true;
-      myPath.UpdateMap(myPath.lastPoseReceived.x, myPath.lastPoseReceived.y);
-      ROS_INFO("I have updated the map");
-
-      myPath.advanced_xy_desired(myPath.lastPoseReceived.x, myPath.lastPoseReceived.y,
-                                 &myPath.poseRefX, &myPath.poseRefY);
-      myPath.SetRef(myPath.poseRefX, myPath.poseRefY, myPath.next_z, myPath.next_rotZ);
-      ROS_INFO("poseref is : (%lf, %lf)", myPath.poseRefX, myPath.poseRefY);
-      ros::Duration(1).sleep();
-      myPath.publish_poseref();
-    }
+    // // Those ones come from the target_detected channel in the strategy node.
+    // else if (myPath.lastStrategyReceived.type == 5.0)
+    // {
+    //   myPath.takeoff = true;
+    //   myPath.SetRef(myPath.lastStrategyReceived.x, myPath.lastStrategyReceived.y, myPath.next_z,
+    //                 myPath.next_rotZ);
+    //   myPath.publish_poseref();
+    // }
+    //
+    // // Strategy = BackToBase, the drone rises up to 2m in order to avoid the other drone coming
+    // to
+    // // replace him. Then it goes back to the base and land when it is in a radius of 0.15m from
+    // // where it took off.
+    // else if (myPath.lastStrategyReceived.type == 6.0)
+    // {
+    //   myPath.next_z = 2;
+    //   if (sqrt((myPath.lastPoseReceived.x) * (myPath.lastPoseReceived.x) +
+    //            (myPath.lastPoseReceived.y) * (myPath.lastPoseReceived.y)) < 0.15)
+    //   {
+    //     myPath.takeoff = false;
+    //     myPath.landing = true;
+    //   }
+    //   else if (!myPath.landing)
+    //   {
+    //     myPath.takeoff = true;
+    //     myPath.SetRef(0, 0, myPath.next_z, myPath.next_rotZ);
+    //   }
+    //   myPath.publish_poseref();
+    // }
+    //
+    // // Strategy = Seek (explore), the drone initializes the grid. Then this is the
+    // // advanced_xy_desired function that tells the drone where to go.
+    // else if (myPath.lastStrategyReceived.type == 2.0)
+    // {
+    //   if (!myPath.gridInitialized)
+    //   {
+    //     ROS_INFO("I am initializing the grid");
+    //
+    //     myPath.InitializeGrid();
+    //   }
+    //
+    //   myPath.takeoff = true;
+    //   myPath.UpdateMap(myPath.lastPoseReceived.x, myPath.lastPoseReceived.y);
+    //   ROS_INFO("I have updated the map");
+    //
+    //   myPath.advanced_xy_desired(myPath.lastPoseReceived.x, myPath.lastPoseReceived.y,
+    //                              &myPath.poseRefX, &myPath.poseRefY);
+    //   myPath.SetRef(myPath.poseRefX, myPath.poseRefY, myPath.next_z, myPath.next_rotZ);
+    //   ROS_INFO("poseref is : (%lf, %lf)", myPath.poseRefX, myPath.poseRefY);
+    //   ros::Duration(1).sleep();
+    //   myPath.publish_poseref();
+    // }
 
     // Test of command for the report.
-    else if (myPath.lastStrategyReceived.type == 8.0)
-    {
-      myPath.takeoff = true;
-      myPath.SetRef(0.0, 0.0, 1.0, 0.0);
-      myPath.publish_poseref();
-      ros::Duration(15).sleep();
-      myPath.SetRef(2.0, 0.0, 1.0, 0.0);
-      myPath.publish_poseref();
-      ros::Duration(35).sleep();
-      myPath.SetRef(0.0, 0.0, 1.0, 0.0);
-      myPath.publish_poseref();
-      ros::Duration(35).sleep();
-      myPath.SetRef(-2.0, 0.0, 1.0, 0.0);
-      myPath.publish_poseref();
-      ros::Duration(35).sleep();
-    }
+    // else if (myPath.lastStrategyReceived.type == 8.0)
+    // {
+    ros::Duration(20).sleep();
+    ROS_INFO_STREAM("WORKING !!")
+    myPath.takeoff = true;
+    myPath.SetRef(0.0, 0.0, 1.0, 0.0);
+    myPath.publish_poseref();
+    ros::Duration(15).sleep();
+    myPath.SetRef(2.0, 0.0, 1.0, 0.0);
+    myPath.publish_poseref();
+    ros::Duration(35).sleep();
+    myPath.SetRef(0.0, 0.0, 1.0, 0.0);
+    myPath.publish_poseref();
+    ros::Duration(35).sleep();
+    myPath.SetRef(-2.0, 0.0, 1.0, 0.0);
+    myPath.publish_poseref();
+    ros::Duration(35).sleep();
+    // }
 
     TOC(path, "path planning");
     ros::spinOnce();

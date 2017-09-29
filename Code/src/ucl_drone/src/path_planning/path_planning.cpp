@@ -1,9 +1,4 @@
-/* NON-ORIGINAL FILE
-THIS HAS BEEN MODIFIED IN ORDER TO ONLY TEST THE CONTROLLER PERFORMANCES,
-WITHOUT TAKING ACCOUNT OF THE VISUAL POSE ESTIMATION OR STRATEGY NODES.
-Date: September 2017
-Author of modification: Aurian d'Avernas
-*/
+/* NOT THE ORIGINAL FILE */
 
 /*
  *  This file is part of ucl_drone 2016.
@@ -43,9 +38,9 @@ PathPlanning::PathPlanning() {
   pose_channel = nh.resolveName("pose_estimation");
   pose_sub = nh.subscribe(pose_channel, 10, &PathPlanning::poseCb, this);
 
-  // strategy_channel = nh.resolveName("strategy");
-  // strategy_sub =
-  //     nh.subscribe(strategy_channel, 10, &PathPlanning::strategyCb, this);
+  strategy_channel = nh.resolveName("strategy");
+  strategy_sub =
+      nh.subscribe(strategy_channel, 10, &PathPlanning::strategyCb, this);
 
   // Publishers
   poseref_channel = nh.resolveName("path_planning");
@@ -53,7 +48,7 @@ PathPlanning::PathPlanning() {
 
   // Just for some tests
   // mapcell_channel = nh.resolveName("mapcell");
-  // mapcell_pub = nh.advertise<ucl_drone::cellUpdate>(mapcell_channel, 500);
+  // mapcell_pub = nh.advertise< ucl_drone::cellUpdate >(mapcell_channel, 500);
 
   // instruction_publishing = false;
 }
@@ -66,7 +61,7 @@ PathPlanning::~PathPlanning() {}
 void PathPlanning::reset() {
   next_x = 0;
   next_y = 0;
-  next_z = 1.0;
+  next_z = 1;
   next_rotZ = 0;
   i = 0;
   landing = false;
@@ -113,7 +108,6 @@ void PathPlanning::poseCb(const ucl_drone::Pose3D::ConstPtr posePtr) {
 // "strategy". So it
 // takes this message and put it in a variable where it will be used in the
 // other functions.
-
 void PathPlanning::strategyCb(
     const ucl_drone::StrategyMsg::ConstPtr strategyPtr) {
   lastStrategyReceived = *strategyPtr;
@@ -142,7 +136,7 @@ bool PathPlanning::xy_desired() {
   }
 }
 
-// In our final approach to explore the map, the pathplanning creates a grid.
+// In our final approach to expore the map, the pathplanning creates a grid.
 // This grid is made of
 // 0.10*0.10 m² cells that can be in 3 different states :
 // 0 means unseen/unexplored
@@ -168,7 +162,6 @@ void PathPlanning::InitializeGrid() {
 // (for example). This function has been made in order where it can easily be
 // replaced by something
 // real and with more performances.
-
 bool PathPlanning::ThereIsAWallCell(int i, int j) // modified
 {
   yfromcell2 = -((j / 10.0) - SIDE / 2.0);
@@ -306,8 +299,7 @@ void PathPlanning::SetRef(double x_ref, double y_ref, double z_ref,
 // comming from the
 // Strategy node.
 int main(int argc, char **argv) {
-  ROS_INFO_STREAM("Controller node started!");
-  // ROS_INFO_STREAM("poseref_sending started!");
+  ROS_INFO_STREAM("poseref_sending started!");
   ros::init(argc, argv, "path_planning");
   PathPlanning myPath;
   ros::Rate r(20); // Refresh every 1/20 second.
@@ -317,24 +309,26 @@ int main(int argc, char **argv) {
   myPath.reset();
   myPath.publish_poseref();
   ros::spinOnce();
-  r.sleep();
+  // r.sleep();
   ROS_INFO_STREAM("poseref initialized and launched");
   while (ros::ok()) {
-    // TIC(path);
+    TIC(path);
     // if (myPath.lastStrategyReceived.type == 1.0)  // This corresponds to the
     // takeoff strategy.
     // {
     //   myPath.takeoff = true;
     //   myPath.publish_poseref();
     // }
-
-    // Strategy == 7.0 and == 8.0 are never true. Those numbers are just used to
-    // change the response
-    // we want from the pathplanning between 3 different functions. (test -
+    //
+    // // Strategy == 7.0 and == 8.0 are never true. Those numbers are just used
+    // to change the
+    // response
+    // // we want from the pathplanning between 3 different functions. (test -
     // labyrinth - grid). We
-    // just have to put 2.0 to the one we want and other numbers to the others.
-
-    // This function calls the labyrinth pathplanning.
+    // // just have to put 2.0 to the one we want and other numbers to the
+    // others.
+    //
+    // // This function calls the labyrinth pathplanning.
     // else if (myPath.lastStrategyReceived.type == 7.0)
     // {
     //   if (myPath.xy_desired() == true)
@@ -369,7 +363,8 @@ int main(int argc, char **argv) {
     // }
     //
     // // Strategy = Follow, the drone goes to the coordinates writed in the
-    // message from the strategy.
+    // message from the
+    // strategy.
     // // Those ones come from the target_detected channel in the strategy node.
     // else if (myPath.lastStrategyReceived.type == 5.0)
     // {
@@ -381,7 +376,8 @@ int main(int argc, char **argv) {
     // }
     //
     // // Strategy = BackToBase, the drone rises up to 2m in order to avoid the
-    // other drone coming to
+    // other drone coming
+    // to
     // // replace him. Then it goes back to the base and land when it is in a
     // radius of 0.15m from
     // // where it took off.
@@ -428,27 +424,28 @@ int main(int argc, char **argv) {
     //   ros::Duration(1).sleep();
     //   myPath.publish_poseref();
     // }
-    //
-    // // Test of command for the report.
+
+    // Test of command for the report.
     // else if (myPath.lastStrategyReceived.type == 8.0)
     // {
+    ros::Duration(20).sleep();
+    ROS_INFO_STREAM("WORKING !!");
     myPath.takeoff = true;
     myPath.SetRef(0.0, 0.0, 1.0, 0.0);
     myPath.publish_poseref();
-    ROS_INFO_STREAM_ONCE("Working !!!");
-    ros::Duration(25).sleep();
+    ros::Duration(15).sleep();
     myPath.SetRef(2.0, 0.0, 1.0, 0.0);
     myPath.publish_poseref();
-    ros::Duration(25).sleep();
+    ros::Duration(35).sleep();
     myPath.SetRef(0.0, 0.0, 1.0, 0.0);
     myPath.publish_poseref();
-    ros::Duration(25).sleep();
+    ros::Duration(35).sleep();
     myPath.SetRef(-2.0, 0.0, 1.0, 0.0);
     myPath.publish_poseref();
     ros::Duration(35).sleep();
     // }
 
-    // TOC(path, "path planning");
+    TOC(path, "path planning");
     ros::spinOnce();
     r.sleep();
   }

@@ -527,6 +527,19 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named simple_square_vel
+
+# Build rule for target.
+simple_square_vel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_square_vel
+.PHONY : simple_square_vel
+
+# fast build rule for target.
+simple_square_vel/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/build
+.PHONY : simple_square_vel/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -772,19 +785,6 @@ thesis_aurian_genpy: cmake_check_build_system
 thesis_aurian_genpy/fast:
 	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build
 .PHONY : thesis_aurian_genpy/fast
-
-#=============================================================================
-# Target rules for targets named trajectories
-
-# Build rule for target.
-trajectories: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectories
-.PHONY : trajectories
-
-# fast build rule for target.
-trajectories/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/trajectories.dir/build.make thesis_aurian/CMakeFiles/trajectories.dir/build
-.PHONY : trajectories/fast
 
 #=============================================================================
 # Target rules for targets named _ucl_drone_generate_messages_check_deps_DroneRole
@@ -1465,6 +1465,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... simple_square_vel"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
@@ -1484,7 +1485,6 @@ help:
 	@echo "... thesis_aurian_generate_messages_py"
 	@echo "... thesis_aurian_genlisp"
 	@echo "... thesis_aurian_genpy"
-	@echo "... trajectories"
 	@echo "... _ucl_drone_generate_messages_check_deps_DroneRole"
 	@echo "... _ucl_drone_generate_messages_check_deps_DroneRoles"
 	@echo "... _ucl_drone_generate_messages_check_deps_KeyPoint"

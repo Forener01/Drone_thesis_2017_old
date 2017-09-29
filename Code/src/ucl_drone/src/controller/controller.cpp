@@ -75,7 +75,7 @@ BasicController::BasicController() {
   // path_planning
 
   // Parameters
-  alt_ref = 1.0; // default altitude reference (unit: m)
+  alt_ref = 1.0; // default reference altitude (unit: m)
   x_ref = 0.0;
   y_ref = 0.0;
   yaw_ref = 0.0;
@@ -88,7 +88,7 @@ BasicController::BasicController() {
   // Initializing the variables we need
 
   // altitude
-  Kp_alt = 1.8;
+  Kp_alt = 1.8; // old 1.8
   Ki_alt = 0;
   Kd_alt = 2;
   /*working values inside : Kp_alt=7 & Kd_alt=2
@@ -126,7 +126,6 @@ BasicController::BasicController() {
 BasicController::~BasicController() {}
 
 // From services
-
 bool BasicController::startControl(std_srvs::Empty::Request &req,
                                    std_srvs::Empty::Response &res) {
   ROS_INFO("calling service start");
@@ -264,11 +263,18 @@ void BasicController::reguAltitude(double *zvel_cmd, double alt_mes,
 
     // Integral term
 
-    i_term = integral_alt_error;
+    // i_term = integral_alt_error;
+    i_term = 0;
 
     // Z velocity command sent to the drone
 
     last_vel_z_command = (Kp_alt * p_term + i_term * Ki_alt + Kd_alt * d_term);
+
+    if (last_vel_z_command > anti_windup_yaw) {
+      last_vel_z_command = anti_windup_yaw;
+    } else if (last_vel_z_command < -anti_windup_yaw) {
+      last_vel_z_command = -anti_windup_yaw;
+    }
 
     *zvel_cmd = last_vel_z_command;
     // printf("zvel_cmd: %lf \n", last_vel_z_command);
@@ -322,6 +328,7 @@ void BasicController::reguYaw(double *yawvel_cmd, double yaw_mes,
     }
     integral_yaw_error += delta_yaw * time_difference;
     i_term = integral_yaw_error;
+    // i_term = 0;
     new_vel_yaw_cmd = (Kp_yaw * p_term + i_term * Ki_yaw + Kd_yaw * d_term);
 
     // rotational speed limitation (wrongly called anti_windup).
@@ -426,10 +433,12 @@ static void basicSigintHandler(int sig) { urgency_signal = true; }
 // Main function, launching the controLoop function.
 int main(int argc, char **argv) {
   ros::init(argc, argv, "controller", ros::init_options::NoSigintHandler);
-  ROS_INFO_STREAM("Controller node started!");
 
   signal(SIGINT, basicSigintHandler);
   BasicController bc;
+
+  ros::Duration(10).sleep();
+  ROS_INFO_STREAM("controller node started!");
 
   while (ros::ok()) {
     TIC(control);
