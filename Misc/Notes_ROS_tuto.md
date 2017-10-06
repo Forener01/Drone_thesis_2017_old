@@ -207,6 +207,12 @@ void callback_function(const package_name::type_name &msg) {
 <arg name="arg-name" default="arg-value" />
 <arg name="arg-name" value="arg-value" />
 - creating groups to push several nodes into the same namespace and also to conditionally enable or disable nodes.
+- <node
+pkg="package-name"
+type="executable-name"
+name="node-name"
+/>
+- rosp.init_node() defines a default name which is used if you don't overwrite it (e.g. rosrun rf_trilateration rf_sim_node.py). The name tag in the launch file on the other hand overwrites this name and therefore you will always find the node named the same as the name tag in the launch file.
 
 # Parameters
 - rosparam list

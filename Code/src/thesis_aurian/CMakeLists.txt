@@ -9,6 +9,7 @@ project(thesis_aurian)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   ardrone_autonomy
+  ardrone_velocity
   geometry_msgs
   roscpp
   message_generation
@@ -140,7 +141,8 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/thesis_aurian_node.cpp)
-add_executable(simple_square_vel src/simple_square_vel.cpp)
+add_executable(simple_square_vel src/tests/simple_square_vel.cpp)
+add_executable(simple_square_vel_tud src/tests/simple_square_vel_tud.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -158,6 +160,7 @@ add_executable(simple_square_vel src/simple_square_vel.cpp)
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(simple_square_vel ${catkin_LIBRARIES})
+target_link_libraries(simple_square_vel_tud ${catkin_LIBRARIES})
 
 #############
 ## Install ##

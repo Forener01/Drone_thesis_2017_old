@@ -880,6 +880,15 @@ actionlib_msgs_DIR:PATH=/opt/ros/indigo/share/actionlib_msgs/cmake
 //The directory containing a CMake configuration file for ardrone_autonomy.
 ardrone_autonomy_DIR:PATH=/opt/ros/indigo/share/ardrone_autonomy/cmake
 
+//Value Computed by CMake
+ardrone_velocity_BINARY_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity
+
+//The directory containing a CMake configuration file for ardrone_velocity.
+ardrone_velocity_DIR:PATH=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/share/ardrone_velocity/cmake
+
+//Value Computed by CMake
+ardrone_velocity_SOURCE_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity
+
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/indigo/share/bond/cmake
 
@@ -1193,7 +1202,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=5
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -360,62 +360,6 @@ controller_custom/fast:
 .PHONY : controller_custom/fast
 
 # Convenience name for target.
-ucl_drone/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : ucl_drone/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: ucl_drone/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make ucl_drone/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
-ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make ucl_drone/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
 ucl_drone/CMakeFiles/map_keyframe_based.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/map_keyframe_based.dir/rule
 .PHONY : ucl_drone/CMakeFiles/map_keyframe_based.dir/rule
@@ -442,48 +386,6 @@ multi_strategy: ucl_drone/CMakeFiles/multi_strategy.dir/rule
 multi_strategy/fast:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/multi_strategy.dir/build.make ucl_drone/CMakeFiles/multi_strategy.dir/build
 .PHONY : multi_strategy/fast
-
-# Convenience name for target.
-ucl_drone/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : ucl_drone/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: ucl_drone/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make ucl_drone/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-ucl_drone/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : ucl_drone/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: ucl_drone/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make ucl_drone/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-ucl_drone/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : ucl_drone/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_py: ucl_drone/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make ucl_drone/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 ucl_drone/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
@@ -1255,10 +1157,6 @@ help:
 	@echo "... computer_vision"
 	@echo "... controller"
 	@echo "... controller_custom"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -1266,9 +1164,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... map_keyframe_based"
 	@echo "... multi_strategy"
-	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... nav_msgs_generate_messages_py"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"

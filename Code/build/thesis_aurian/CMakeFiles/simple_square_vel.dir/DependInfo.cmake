@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/simple_square_vel.cpp" "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/simple_square_vel.dir/src/simple_square_vel.cpp.o"
+  "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/tests/simple_square_vel.cpp" "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/simple_square_vel.dir/src/tests/simple_square_vel.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,6 +22,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/include"
+  "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/include"
+  "/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/include"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

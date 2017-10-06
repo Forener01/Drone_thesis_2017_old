@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/simple_square_vel.cpp
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/tests/simple_square_vel.cpp
 geometry_msgs/Twist.h
 -
 ros/ros.h

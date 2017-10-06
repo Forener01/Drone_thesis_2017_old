@@ -13,6 +13,7 @@
 **S 11/09**
 - Lire doc ardrone_autonomy
 - Lire TFE Dehem
+- Checker tum_ardrone.md
 
 **S 18/09**
 - Synthétiser les améliorations possibles
@@ -23,3 +24,5 @@
 - Faire tourner controller_2016
 - Automatiser lancement "Opération Séduction"
 - Régler bugs GitHub 
+
+**S 02/10**

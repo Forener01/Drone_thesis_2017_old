@@ -16,7 +16,7 @@ OLD
 - ArUco Markers with ArUco library (pas assez flexible pour l'objectif à long terme)
 
 # A faire
-- Checker tum_ardrone.md et refs.md
+- Checker refs.md
 - Recherche détection contour et filtre couleur
 - Utiliser ardrone_velocity package
 - Utiliser ardrone_velocity_ekf (TU Darmstadt)

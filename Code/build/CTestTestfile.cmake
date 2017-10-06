@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
+SUBDIRS(ardrone_velocity)
 SUBDIRS(thesis_aurian)
 SUBDIRS(ucl_drone)
 SUBDIRS(ucl_drone_gui)
