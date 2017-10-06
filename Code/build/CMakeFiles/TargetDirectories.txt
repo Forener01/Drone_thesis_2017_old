@@ -25,6 +25,7 @@
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/computer_vision.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/controller.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/controller_custom.dir
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/controller_tud.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/CMakeFiles/download_extra_data.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/CMakeFiles/doxygen.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity/CMakeFiles/dynamic_reconfigure_gencfg.dir
@@ -65,7 +66,6 @@
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/simple_square_vel.dir
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/simple_square_vel_tud.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity/CMakeFiles/std_msgs_generate_messages_py.dir

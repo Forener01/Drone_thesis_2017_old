@@ -1,12 +1,12 @@
-#include <sstream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <ros/ros.h>
-#include "std_msgs/Float32.h"
+#include "ardrone_autonomy/Navdata.h"
 #include "geometry_msgs/Twist.h"
 #include "sensor_msgs/Joy.h"
 #include "std_msgs/Empty.h"
-#include "ardrone_autonomy/Navdata.h"
+#include "std_msgs/Float32.h"
+#include <ros/ros.h>
+#include <sstream>
+#include <stdio.h>
+#include <stdlib.h>
 
 double height = 2;
 double velx = 0;
@@ -22,7 +22,7 @@ ros::Subscriber cmd_vel_sub, navdata_sub;
 ros::Publisher twist_pub, takeoff_pub, land_pub;
 ros::Timer timer1;
 ros::Timer timer2;
-ros::NodeHandle* n_p;
+ros::NodeHandle *n_p;
 ardrone_autonomy::Navdata last_navdata;
 
 enum class State {
@@ -74,7 +74,7 @@ void takeoff(void) { takeoff_pub.publish(empty); }
 
 void land(void) { land_pub.publish(empty); }
 
-void joyCallback(const sensor_msgs::Joy& in) {
+void joyCallback(const sensor_msgs::Joy &in) {
   geometry_msgs::Twist out_twist;
   velx = double(in.axes[1]);
   vely = double(in.axes[0]);
@@ -107,14 +107,14 @@ void joyCallback(const sensor_msgs::Joy& in) {
   twist_pub.publish(out_twist);
 }
 
-void stopFlying(const ros::TimerEvent&) {
-  ROS_INFO("Flying end, sending command to hover");
+void stopFlying(const ros::TimerEvent &) {
+  ROS_INFO_ONCE("Flying end, sending command to hover");
   quad_state = State::hovering_end;
   set_hover();
 }
 
-void startFlying(const ros::TimerEvent&) {
-  ROS_INFO("Flying Begin (10 seconds)");
+void startFlying(const ros::TimerEvent &) {
+  ROS_INFO_ONCE("Flying Begin (10 seconds)");
   quad_state = State::flying;
   timer2 = n_p->createTimer(ros::Duration(10), stopFlying, true);
 }
@@ -123,8 +123,8 @@ void navdataCallback(const ardrone_autonomy::Navdata navdata) {
   last_navdata = navdata;
 }
 
-int main(int argc, char* argv[]) {
-  ros::init(argc, argv, "test_controller");  // Name of the node
+int main(int argc, char *argv[]) {
+  ros::init(argc, argv, "test_controller"); // Name of the node
   ros::NodeHandle n;
 
   n_p = &n;
@@ -134,7 +134,7 @@ int main(int argc, char* argv[]) {
   takeoff_pub = n.advertise<std_msgs::Empty>("/ardrone/takeoff", 1);
   land_pub = n.advertise<std_msgs::Empty>("/ardrone/land", 1);
 
-  ros::Rate rate(5);  // 10 hz
+  ros::Rate rate(5); // 10 hz
   geometry_msgs::Twist out_twist;
   out_twist.linear.x = 0.0;
   out_twist.linear.y = 0.0;
@@ -146,23 +146,23 @@ int main(int argc, char* argv[]) {
   while (n.ok()) {
     ros::spinOnce();
     if (quad_state == State::ground_init) {
-      ROS_INFO("Init Test.");
-      ROS_INFO("Sending command to takeoff.");
+      ROS_INFO_ONCE("Init Test.");
+      ROS_INFO_ONCE("Sending command to takeoff.");
 
       quad_state = State::takingoff;
     } else if (quad_state == State::takingoff) {
       // checkHover();
       if (last_navdata.state == (int32_t)NavdataState::landed) {
-        ROS_INFO("FORCING command to takeoff.");
-        ROS_INFO("last_navdata.state %d", last_navdata.state);
+        ROS_INFO_ONCE("FORCING command to takeoff.");
+        ROS_INFO_ONCE("last_navdata.state %d", last_navdata.state);
         takeoff();
       } else if (last_navdata.state == (int32_t)NavdataState::init) {
-        ROS_INFO("FORCING command to takeoff.");
-        ROS_INFO("last_navdata.state %d", last_navdata.state);
+        ROS_INFO_ONCE("FORCING command to takeoff.");
+        ROS_INFO_ONCE("last_navdata.state %d", last_navdata.state);
         takeoff();
       } else if (last_navdata.state == (int32_t)NavdataState::hovering) {
         quad_state = State::hovering_init;
-        ROS_INFO("Take off complete, waiting 0.1 seconds.");
+        ROS_INFO_ONCE("Take off complete, waiting 0.1 seconds.");
         timer1 = n.createTimer(ros::Duration(0.1), startFlying, true);
       }
     } else if (quad_state == State::hovering_init) {
@@ -170,18 +170,18 @@ int main(int argc, char* argv[]) {
       // send_command();
       //
       //
-      twist_pub.publish(out_twist);
-      out_twist.linear.x = 0.2;
+      out_twist.linear.x = 5.0;
       out_twist.linear.y = 0.0;
       out_twist.linear.z = 0.0;
       out_twist.angular.z = 0.0;
       out_twist.angular.x = 1.0;
       out_twist.angular.y = 1.0;
+      twist_pub.publish(out_twist);
 
     } else if (quad_state == State::hovering_end) {
-      ROS_INFO("last_navdata.state %d", last_navdata.state);
+      ROS_INFO_ONCE("last_navdata.state %d", last_navdata.state);
       if (last_navdata.state == (int32_t)NavdataState::hovering) {
-        ROS_INFO("Hovering, now sending command to land");
+        ROS_INFO_ONCE("Hovering, now sending command to land");
         land();
         quad_state = State::landing;
       }
@@ -190,16 +190,16 @@ int main(int argc, char* argv[]) {
       if (last_navdata.state == (int32_t)NavdataState::gotofixpoint) {
         // OK do nothing
       } else if (last_navdata.state == (int32_t)NavdataState::landed) {
-        ROS_INFO("Quadcopter on the ground");
+        ROS_INFO_ONCE("Quadcopter on the ground");
         quad_state = State::ground_end;
 
       } else {
         land();
-        ROS_INFO("FORCING LAND");
+        ROS_INFO_ONCE("FORCING LAND");
       }
     } else if (quad_state == State::ground_end) {
       // Check for landing
-      ROS_INFO("Test Succesfull");
+      ROS_INFO_ONCE("Test Succesfull");
       ros::shutdown();
     }
 

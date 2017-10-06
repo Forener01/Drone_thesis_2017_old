@@ -7,24 +7,24 @@
 #IncludeRegexTransform: 
 
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/test_controller.cpp
-sstream
--
-stdio.h
--
-stdlib.h
--
-ros/ros.h
--
-std_msgs/Float32.h
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/std_msgs/Float32.h
+ardrone_autonomy/Navdata.h
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/ardrone_autonomy/Navdata.h
 geometry_msgs/Twist.h
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/geometry_msgs/Twist.h
 sensor_msgs/Joy.h
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/sensor_msgs/Joy.h
 std_msgs/Empty.h
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/std_msgs/Empty.h
-ardrone_autonomy/Navdata.h
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/ardrone_autonomy/Navdata.h
+std_msgs/Float32.h
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/std_msgs/Float32.h
+ros/ros.h
+-
+sstream
+-
+stdio.h
+-
+stdlib.h
+-
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h

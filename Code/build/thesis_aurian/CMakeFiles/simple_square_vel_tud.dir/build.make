@@ -49,37 +49,37 @@ include thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/progress.make
 # Include the compile flags for this target's objects.
 include thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/flags.make
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/flags.make
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o: /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/tests/simple_square_vel_tud.cpp
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/flags.make
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o: /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/controller/simple_square_vel_tud.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o"
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o -c /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/tests/simple_square_vel_tud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o"
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o -c /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/controller/simple_square_vel_tud.cpp
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.i"
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/tests/simple_square_vel_tud.cpp > CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.i
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.i"
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/controller/simple_square_vel_tud.cpp > CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.i
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.s"
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/tests/simple_square_vel_tud.cpp -o CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.s
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.s"
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/controller/simple_square_vel_tud.cpp -o CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.s
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.requires:
-.PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.requires
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.requires:
+.PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.requires
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.provides: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.requires
-	$(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.provides.build
-.PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.provides
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.provides: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.requires
+	$(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.provides.build
+.PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.provides
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.provides.build: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.provides.build: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o
 
 # Object files for target simple_square_vel_tud
 simple_square_vel_tud_OBJECTS = \
-"CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o"
+"CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o"
 
 # External object files for target simple_square_vel_tud
 simple_square_vel_tud_EXTERNAL_OBJECTS =
 
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/lib/thesis_aurian/simple_square_vel_tud: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/lib/thesis_aurian/simple_square_vel_tud: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/lib/thesis_aurian/simple_square_vel_tud: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/lib/thesis_aurian/simple_square_vel_tud: /opt/ros/indigo/lib/libimage_transport.so
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/lib/thesis_aurian/simple_square_vel_tud: /opt/ros/indigo/lib/libclass_loader.so
@@ -121,7 +121,7 @@ simple_square_vel_tud_EXTERNAL_OBJECTS =
 thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build: /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/devel/lib/thesis_aurian/simple_square_vel_tud
 .PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build
 
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/requires: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o.requires
+thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/requires: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/controller/simple_square_vel_tud.cpp.o.requires
 .PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/requires
 
 thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/clean:

@@ -248,6 +248,20 @@ ardrone_autonomy_generate_messages_py/fast:
 .PHONY : ardrone_autonomy_generate_messages_py/fast
 
 # Convenience name for target.
+thesis_aurian/CMakeFiles/controller_tud.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/controller_tud.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/controller_tud.dir/rule
+
+# Convenience name for target.
+controller_tud: thesis_aurian/CMakeFiles/controller_tud.dir/rule
+.PHONY : controller_tud
+
+# fast build rule for target.
+controller_tud/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/build
+.PHONY : controller_tud/fast
+
+# Convenience name for target.
 thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
@@ -302,20 +316,6 @@ simple_square_vel: thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
 simple_square_vel/fast:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/build
 .PHONY : simple_square_vel/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/rule
-
-# Convenience name for target.
-simple_square_vel_tud: thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/rule
-.PHONY : simple_square_vel_tud
-
-# fast build rule for target.
-simple_square_vel_tud/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build
-.PHONY : simple_square_vel_tud/fast
 
 # Convenience name for target.
 thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
@@ -541,53 +541,53 @@ thesis_aurian_genpy/fast:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build
 .PHONY : thesis_aurian_genpy/fast
 
-src/tests/simple_square_vel.o: src/tests/simple_square_vel.cpp.o
-.PHONY : src/tests/simple_square_vel.o
+src/controller/controller_tud.o: src/controller/controller_tud.cpp.o
+.PHONY : src/controller/controller_tud.o
 
 # target to build an object file
-src/tests/simple_square_vel.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/tests/simple_square_vel.cpp.o
-.PHONY : src/tests/simple_square_vel.cpp.o
+src/controller/controller_tud.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/src/controller/controller_tud.cpp.o
+.PHONY : src/controller/controller_tud.cpp.o
 
-src/tests/simple_square_vel.i: src/tests/simple_square_vel.cpp.i
-.PHONY : src/tests/simple_square_vel.i
+src/controller/controller_tud.i: src/controller/controller_tud.cpp.i
+.PHONY : src/controller/controller_tud.i
 
 # target to preprocess a source file
-src/tests/simple_square_vel.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/tests/simple_square_vel.cpp.i
-.PHONY : src/tests/simple_square_vel.cpp.i
+src/controller/controller_tud.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/src/controller/controller_tud.cpp.i
+.PHONY : src/controller/controller_tud.cpp.i
 
-src/tests/simple_square_vel.s: src/tests/simple_square_vel.cpp.s
-.PHONY : src/tests/simple_square_vel.s
+src/controller/controller_tud.s: src/controller/controller_tud.cpp.s
+.PHONY : src/controller/controller_tud.s
 
 # target to generate assembly for a file
-src/tests/simple_square_vel.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/tests/simple_square_vel.cpp.s
-.PHONY : src/tests/simple_square_vel.cpp.s
+src/controller/controller_tud.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/src/controller/controller_tud.cpp.s
+.PHONY : src/controller/controller_tud.cpp.s
 
-src/tests/simple_square_vel_tud.o: src/tests/simple_square_vel_tud.cpp.o
-.PHONY : src/tests/simple_square_vel_tud.o
+src/controller/simple_square_vel.o: src/controller/simple_square_vel.cpp.o
+.PHONY : src/controller/simple_square_vel.o
 
 # target to build an object file
-src/tests/simple_square_vel_tud.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.o
-.PHONY : src/tests/simple_square_vel_tud.cpp.o
+src/controller/simple_square_vel.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.o
+.PHONY : src/controller/simple_square_vel.cpp.o
 
-src/tests/simple_square_vel_tud.i: src/tests/simple_square_vel_tud.cpp.i
-.PHONY : src/tests/simple_square_vel_tud.i
+src/controller/simple_square_vel.i: src/controller/simple_square_vel.cpp.i
+.PHONY : src/controller/simple_square_vel.i
 
 # target to preprocess a source file
-src/tests/simple_square_vel_tud.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.i
-.PHONY : src/tests/simple_square_vel_tud.cpp.i
+src/controller/simple_square_vel.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.i
+.PHONY : src/controller/simple_square_vel.cpp.i
 
-src/tests/simple_square_vel_tud.s: src/tests/simple_square_vel_tud.cpp.s
-.PHONY : src/tests/simple_square_vel_tud.s
+src/controller/simple_square_vel.s: src/controller/simple_square_vel.cpp.s
+.PHONY : src/controller/simple_square_vel.s
 
 # target to generate assembly for a file
-src/tests/simple_square_vel_tud.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/src/tests/simple_square_vel_tud.cpp.s
-.PHONY : src/tests/simple_square_vel_tud.cpp.s
+src/controller/simple_square_vel.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.s
+.PHONY : src/controller/simple_square_vel.cpp.s
 
 # Help Target
 help:
@@ -602,6 +602,7 @@ help:
 	@echo "... ardrone_autonomy_generate_messages_cpp"
 	@echo "... ardrone_autonomy_generate_messages_lisp"
 	@echo "... ardrone_autonomy_generate_messages_py"
+	@echo "... controller_tud"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -612,7 +613,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... simple_square_vel"
-	@echo "... simple_square_vel_tud"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
@@ -630,12 +630,12 @@ help:
 	@echo "... thesis_aurian_generate_messages_py"
 	@echo "... thesis_aurian_genlisp"
 	@echo "... thesis_aurian_genpy"
-	@echo "... src/tests/simple_square_vel.o"
-	@echo "... src/tests/simple_square_vel.i"
-	@echo "... src/tests/simple_square_vel.s"
-	@echo "... src/tests/simple_square_vel_tud.o"
-	@echo "... src/tests/simple_square_vel_tud.i"
-	@echo "... src/tests/simple_square_vel_tud.s"
+	@echo "... src/controller/controller_tud.o"
+	@echo "... src/controller/controller_tud.i"
+	@echo "... src/controller/controller_tud.s"
+	@echo "... src/controller/simple_square_vel.o"
+	@echo "... src/controller/simple_square_vel.i"
+	@echo "... src/controller/simple_square_vel.s"
 .PHONY : help
 
 

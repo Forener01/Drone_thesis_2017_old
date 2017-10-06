@@ -27,12 +27,12 @@ ControlNode::ControlNode() {
   m_i_term_y = 0.0;
 }
 
-void ControlNode::cmd_velCallback(const geometry_msgs::Twist& cmd_vel_in) {
-  m_current_command = cmd_vel_in;  // Units in m/s
+void ControlNode::cmd_velCallback(const geometry_msgs::Twist &cmd_vel_in) {
+  m_current_command = cmd_vel_in; // Units in m/s
   m_cmd_valid = true;
 }
 
-void ControlNode::quad_odom_callback(const nav_msgs::Odometry& odo_msg) {
+void ControlNode::quad_odom_callback(const nav_msgs::Odometry &odo_msg) {
   std_msgs::Float64 debug_msg;
   m_odo_msg = odo_msg;
   m_filtered_vel_x = m_filter_vel_x.filter(m_odo_msg.twist.twist.linear.x);
@@ -52,8 +52,6 @@ void ControlNode::velocity_control(void) {
 
   geometry_msgs::Twist cmd_vel_out;
 
-
-
   // We limit the maximum reference speed of the quadcopter
   //! TODO: Change this into ROS parameters
   double max_vel = 0.6;
@@ -65,9 +63,7 @@ void ControlNode::velocity_control(void) {
 
   // We are only going to change linear.x and linear.y of this command
   // The rest of the values are the same
-   cmd_vel_out = m_current_command;
-
-
+  cmd_vel_out = m_current_command;
 
   // In case that we receive a special command to hover
   if (cmd_vel_out.angular.x == 0 && cmd_vel_out.angular.y == 0 &&
@@ -85,8 +81,8 @@ void ControlNode::velocity_control(void) {
   cmd_vel_out.angular.y = 1;
 
   // Control starts here
-  //!TODO: Separate filter for input of the derivative term.
-  //!TODO: Consider measurement and controled variables delays.
+  //! TODO: Separate filter for input of the derivative term.
+  //! TODO: Consider measurement and controled variables delays.
 
   // We calculate the velocity error
   error_x = m_current_command.linear.x - m_odo_msg.twist.twist.linear.x;
@@ -110,7 +106,7 @@ void ControlNode::velocity_control(void) {
   d_term_x = -(m_filtered_vel_x - m_last_vel_x) / dt.toSec();
   d_term_y = -(m_filtered_vel_y - m_last_vel_y) / dt.toSec();
 
-  //std_msgs::Float64 debug_msg;
+  // std_msgs::Float64 debug_msg;
   // m_debug_pub.publish(debug_msg);
 
   m_last_vel_x = m_filtered_vel_x;
@@ -161,7 +157,7 @@ void ControlNode::velocity_control(void) {
 
 void ControlNode::set_hover(void) {
   geometry_msgs::Twist cmd_vel_out;
-  ROS_INFO("Sending Hover command");
+  ROS_INFO_ONCE("Sending Hover command");
   cmd_vel_out.linear.x = 0;
   cmd_vel_out.linear.y = 0;
   cmd_vel_out.linear.z = 0;
@@ -172,7 +168,7 @@ void ControlNode::set_hover(void) {
   m_cmd_vel_pub.publish(cmd_vel_out);
 }
 
-void ControlNode::i_term_increase(double& i_term, double new_err, double cap) {
+void ControlNode::i_term_increase(double &i_term, double new_err, double cap) {
   if (new_err < 0 && i_term > 0)
     i_term = std::max(0.0, i_term + 2.5 * new_err);
   else if (new_err > 0 && i_term < 0)
@@ -180,16 +176,18 @@ void ControlNode::i_term_increase(double& i_term, double new_err, double cap) {
   else
     i_term += new_err;
 
-  if (i_term > cap) i_term = cap;
-  if (i_term < -cap) i_term = -cap;
+  if (i_term > cap)
+    i_term = cap;
+  if (i_term < -cap)
+    i_term = -cap;
 }
 
 void ControlNode::dynamic_reconfigure_callback(
-    ardrone_velocity::dynamic_param_configConfig& config, uint32_t level) {
-  ROS_INFO("Reconfigure Request: %f %f %f", config.Kp_xy, config.Ki_xy, config.Kd_xy);
+    ardrone_velocity::dynamic_param_configConfig &config, uint32_t level) {
+  ROS_INFO("Reconfigure Request: %f %f %f", config.Kp_xy, config.Ki_xy,
+           config.Kd_xy);
   // Coefficients for the PID controller
   m_Kp_xy = config.Kp_xy;
   m_Ki_xy = config.Ki_xy;
   m_Kd_xy = config.Kd_xy;
-
 }

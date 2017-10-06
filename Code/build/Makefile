@@ -657,6 +657,19 @@ ardrone_autonomy_generate_messages_py/fast:
 .PHONY : ardrone_autonomy_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named controller_tud
+
+# Build rule for target.
+controller_tud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_tud
+.PHONY : controller_tud
+
+# fast build rule for target.
+controller_tud/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/build
+.PHONY : controller_tud/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -707,19 +720,6 @@ simple_square_vel: cmake_check_build_system
 simple_square_vel/fast:
 	$(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/build
 .PHONY : simple_square_vel/fast
-
-#=============================================================================
-# Target rules for targets named simple_square_vel_tud
-
-# Build rule for target.
-simple_square_vel_tud: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_square_vel_tud
-.PHONY : simple_square_vel_tud
-
-# fast build rule for target.
-simple_square_vel_tud/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel_tud.dir/build
-.PHONY : simple_square_vel_tud/fast
 
 #=============================================================================
 # Target rules for targets named std_srvs_generate_messages_cpp
@@ -1527,11 +1527,11 @@ help:
 	@echo "... ardrone_autonomy_generate_messages_cpp"
 	@echo "... ardrone_autonomy_generate_messages_lisp"
 	@echo "... ardrone_autonomy_generate_messages_py"
+	@echo "... controller_tud"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... simple_square_vel"
-	@echo "... simple_square_vel_tud"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"

@@ -194,6 +194,9 @@ DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
 //Doxygen found
 DOXYGEN_FOUND:BOOL=TRUE
 
+//Path to a file.
+EIGEN3_INCLUDE_DIR:PATH=/usr/include/eigen3
+
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
@@ -889,6 +892,12 @@ ardrone_velocity_DIR:PATH=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/de
 //Value Computed by CMake
 ardrone_velocity_SOURCE_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity
 
+//Value Computed by CMake
+ardrone_velocity_ekf_BINARY_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity_ekf/ardrone_velocity_ekf
+
+//Value Computed by CMake
+ardrone_velocity_ekf_SOURCE_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity_ekf/ardrone_velocity_ekf
+
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/indigo/share/bond/cmake
 
@@ -904,14 +913,26 @@ catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/indigo/share/class_loader/cmake
 
+//Dependencies for the target
+coordinate_transform_LIB_DEPENDS:STATIC=general;filtervelocity;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
 
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/indigo/share/cv_bridge/cmake
 
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/indigo/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/indigo/share/diagnostic_updater/cmake
+
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/indigo/share/dynamic_reconfigure/cmake
+
+//Dependencies for target
+filtervelocity_LIB_DEPENDS:STATIC=
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
@@ -924,6 +945,9 @@ genmsg_DIR:PATH=/opt/ros/indigo/share/genmsg/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/indigo/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geographic_msgs.
+geographic_msgs_DIR:PATH=geographic_msgs_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/indigo/share/geometry_msgs/cmake
@@ -983,6 +1007,9 @@ pcl_msgs_DIR:PATH=/opt/ros/indigo/share/pcl_msgs/cmake
 //The directory containing a CMake configuration file for pcl_ros.
 pcl_ros_DIR:PATH=/opt/ros/indigo/share/pcl_ros/cmake
 
+//Dependencies for the target
+pid_control_ekf_LIB_DEPENDS:STATIC=general;filtervelocity;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
 
@@ -991,6 +1018,12 @@ qt_gui_DIR:PATH=/opt/ros/indigo/share/qt_gui/cmake
 
 //The directory containing a CMake configuration file for qt_gui_cpp.
 qt_gui_cpp_DIR:PATH=/opt/ros/indigo/share/qt_gui_cpp/cmake
+
+//Value Computed by CMake
+robot_localization_BINARY_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity_ekf/robot_localization
+
+//Value Computed by CMake
+robot_localization_SOURCE_DIR:STATIC=/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity_ekf/robot_localization
 
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/indigo/share/rosbag/cmake
@@ -1243,6 +1276,10 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: EIGEN3_INCLUDE_DIR
+EIGEN3_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//Details about finding Eigen3
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[/usr/include/eigen3][TRUE][v(2.91.0)]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.6()]
 //Details about finding Qt4
