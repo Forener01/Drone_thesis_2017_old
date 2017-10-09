@@ -358,6 +358,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake"
+  "thesis_aurian/CMakeFiles/testcontroller.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/DependInfo.cmake"

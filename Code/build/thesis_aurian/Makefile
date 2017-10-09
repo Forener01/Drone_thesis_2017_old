@@ -360,6 +360,20 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
+thesis_aurian/CMakeFiles/testcontroller.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/testcontroller.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/testcontroller.dir/rule
+
+# Convenience name for target.
+testcontroller: thesis_aurian/CMakeFiles/testcontroller.dir/rule
+.PHONY : testcontroller
+
+# fast build rule for target.
+testcontroller/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/build
+.PHONY : testcontroller/fast
+
+# Convenience name for target.
 thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
@@ -589,6 +603,30 @@ src/controller/simple_square_vel.cpp.s:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.s
 .PHONY : src/controller/simple_square_vel.cpp.s
 
+src/controller/testcontroller.o: src/controller/testcontroller.cpp.o
+.PHONY : src/controller/testcontroller.o
+
+# target to build an object file
+src/controller/testcontroller.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/src/controller/testcontroller.cpp.o
+.PHONY : src/controller/testcontroller.cpp.o
+
+src/controller/testcontroller.i: src/controller/testcontroller.cpp.i
+.PHONY : src/controller/testcontroller.i
+
+# target to preprocess a source file
+src/controller/testcontroller.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/src/controller/testcontroller.cpp.i
+.PHONY : src/controller/testcontroller.cpp.i
+
+src/controller/testcontroller.s: src/controller/testcontroller.cpp.s
+.PHONY : src/controller/testcontroller.s
+
+# target to generate assembly for a file
+src/controller/testcontroller.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/src/controller/testcontroller.cpp.s
+.PHONY : src/controller/testcontroller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -617,6 +655,7 @@ help:
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... test"
+	@echo "... testcontroller"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -636,6 +675,9 @@ help:
 	@echo "... src/controller/simple_square_vel.o"
 	@echo "... src/controller/simple_square_vel.i"
 	@echo "... src/controller/simple_square_vel.s"
+	@echo "... src/controller/testcontroller.o"
+	@echo "... src/controller/testcontroller.i"
+	@echo "... src/controller/testcontroller.s"
 .PHONY : help
 
 

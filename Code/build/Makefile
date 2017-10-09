@@ -761,6 +761,19 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named testcontroller
+
+# Build rule for target.
+testcontroller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testcontroller
+.PHONY : testcontroller
+
+# fast build rule for target.
+testcontroller/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/build
+.PHONY : testcontroller/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1535,6 +1548,7 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
+	@echo "... testcontroller"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"

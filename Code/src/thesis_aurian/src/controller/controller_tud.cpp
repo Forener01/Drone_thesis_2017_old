@@ -63,7 +63,16 @@ int main(int argc, char **argv) {
 
   ros::Duration(8.0).sleep();
 
+  controlnode.takeoff();
+  ROS_INFO_STREAM_ONCE("The drone is taking off !");
+  ros::Duration(5.0).sleep();
+
+  ROS_INFO_STREAM_ONCE("The drone is in hover mode !");
+  controlnode.hover();
+  ros::Duration(5.0).sleep();
+
   // Moving to the left #1
+  ROS_INFO_STREAM_ONCE("The drone starts the path-planning !");
   controlnode.load_vel(0.0, 0.15, 0.0, 0.0);
   ros::Duration(1.5).sleep();
   // Stabilizing #1

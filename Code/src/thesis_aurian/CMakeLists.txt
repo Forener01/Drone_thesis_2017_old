@@ -143,6 +143,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/thesis_aurian_node.cpp)
 add_executable(simple_square_vel src/controller/simple_square_vel.cpp)
 add_executable(controller_tud src/controller/controller_tud.cpp)
+add_executable(testcontroller src/controller/testcontroller.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -161,6 +162,7 @@ add_executable(controller_tud src/controller/controller_tud.cpp)
 # )
 target_link_libraries(simple_square_vel ${catkin_LIBRARIES})
 target_link_libraries(controller_tud ${catkin_LIBRARIES})
+target_link_libraries(testcontroller ${catkin_LIBRARIES})
 
 #############
 ## Install ##

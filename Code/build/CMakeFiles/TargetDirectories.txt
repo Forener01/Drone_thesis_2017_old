@@ -74,6 +74,7 @@
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/strategy.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity/CMakeFiles/test_controller.dir
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/testcontroller.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/CMakeFiles/tests.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
