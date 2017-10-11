@@ -6,7 +6,7 @@
   <!-- Ultrasound frequency (7 or 8). -->
   <arg name="freq" default="8"/>
 
-<node name="simple_square_vel" pkg="thesis_aurian" type="simple_square_vel" output="screen">
+<node name="square_vel" pkg="thesis_aurian" type="square_vel" output="screen">
 </node>
 
 <node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver"

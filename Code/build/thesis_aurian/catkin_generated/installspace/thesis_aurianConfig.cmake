@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(thesis_aurian_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(thesis_aurian_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(thesis_aurian_EXPORTED_TARGETS "thesis_aurian_generate_messages_cpp;thesis_aurian_generate_messages_lisp;thesis_aurian_generate_messages_py")
+set(thesis_aurian_EXPORTED_TARGETS "thesis_aurian_gencfg")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${thesis_aurian_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${thesis_aurian_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime")
+set(depends "roscpp;rospy;std_msgs;geometry_msgs;nav_msgs;ardrone_autonomy;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND thesis_aurian_EXPORTED_TARGETS ${${thesis_aurian_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "thesis_aurian-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${thesis_aurian_DIR}/${extra})

@@ -150,482 +150,94 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/rule
+thesis_aurian/CMakeFiles/square_vel.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/square_vel.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/square_vel.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : _catkin_empty_exported_target
+square_vel: thesis_aurian/CMakeFiles/square_vel.dir/rule
+.PHONY : square_vel
 
 # fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/build.make thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
+square_vel/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/square_vel.dir/build.make thesis_aurian/CMakeFiles/square_vel.dir/build
+.PHONY : square_vel/fast
 
 # Convenience name for target.
-thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+thesis_aurian/CMakeFiles/test_controller.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/test_controller.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/test_controller.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_cpp: thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : actionlib_generate_messages_cpp
+test_controller: thesis_aurian/CMakeFiles/test_controller.dir/rule
+.PHONY : test_controller
 
 # fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
+test_controller/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/test_controller.dir/build.make thesis_aurian/CMakeFiles/test_controller.dir/build
+.PHONY : test_controller/fast
 
 # Convenience name for target.
-thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_lisp: thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : actionlib_generate_messages_lisp
+thesis_aurian_gencfg: thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/rule
+.PHONY : thesis_aurian_gencfg
 
 # fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_py: thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-ardrone_autonomy_generate_messages_cpp: thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule
-.PHONY : ardrone_autonomy_generate_messages_cpp
-
-# fast build rule for target.
-ardrone_autonomy_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build
-.PHONY : ardrone_autonomy_generate_messages_cpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-ardrone_autonomy_generate_messages_lisp: thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule
-.PHONY : ardrone_autonomy_generate_messages_lisp
-
-# fast build rule for target.
-ardrone_autonomy_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build
-.PHONY : ardrone_autonomy_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule
-
-# Convenience name for target.
-ardrone_autonomy_generate_messages_py: thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule
-.PHONY : ardrone_autonomy_generate_messages_py
-
-# fast build rule for target.
-ardrone_autonomy_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build
-.PHONY : ardrone_autonomy_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/controller_tud.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/controller_tud.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/controller_tud.dir/rule
-
-# Convenience name for target.
-controller_tud: thesis_aurian/CMakeFiles/controller_tud.dir/rule
-.PHONY : controller_tud
-
-# fast build rule for target.
-controller_tud/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/build
-.PHONY : controller_tud/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/simple_square_vel.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
-
-# Convenience name for target.
-simple_square_vel: thesis_aurian/CMakeFiles/simple_square_vel.dir/rule
-.PHONY : simple_square_vel
-
-# fast build rule for target.
-simple_square_vel/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/build
-.PHONY : simple_square_vel/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/testcontroller.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/testcontroller.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/testcontroller.dir/rule
-
-# Convenience name for target.
-testcontroller: thesis_aurian/CMakeFiles/testcontroller.dir/rule
-.PHONY : testcontroller
-
-# fast build rule for target.
-testcontroller/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/build
-.PHONY : testcontroller/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/rule
-
-# Convenience name for target.
-thesis_aurian_gencpp: thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/rule
-.PHONY : thesis_aurian_gencpp
-
-# fast build rule for target.
-thesis_aurian_gencpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/build
-.PHONY : thesis_aurian_gencpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/rule
-
-# Convenience name for target.
-thesis_aurian_generate_messages: thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/rule
-.PHONY : thesis_aurian_generate_messages
-
-# fast build rule for target.
-thesis_aurian_generate_messages/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/build
-.PHONY : thesis_aurian_generate_messages/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-thesis_aurian_generate_messages_cpp: thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/rule
-.PHONY : thesis_aurian_generate_messages_cpp
-
-# fast build rule for target.
-thesis_aurian_generate_messages_cpp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/build
-.PHONY : thesis_aurian_generate_messages_cpp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-thesis_aurian_generate_messages_lisp: thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/rule
-.PHONY : thesis_aurian_generate_messages_lisp
-
-# fast build rule for target.
-thesis_aurian_generate_messages_lisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/build
-.PHONY : thesis_aurian_generate_messages_lisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/rule
-
-# Convenience name for target.
-thesis_aurian_generate_messages_py: thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/rule
-.PHONY : thesis_aurian_generate_messages_py
-
-# fast build rule for target.
-thesis_aurian_generate_messages_py/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/build
-.PHONY : thesis_aurian_generate_messages_py/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/rule
-
-# Convenience name for target.
-thesis_aurian_genlisp: thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/rule
-.PHONY : thesis_aurian_genlisp
-
-# fast build rule for target.
-thesis_aurian_genlisp/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/build
-.PHONY : thesis_aurian_genlisp/fast
-
-# Convenience name for target.
-thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/rule
-.PHONY : thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/rule
-
-# Convenience name for target.
-thesis_aurian_genpy: thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/rule
-.PHONY : thesis_aurian_genpy
-
-# fast build rule for target.
-thesis_aurian_genpy/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build
-.PHONY : thesis_aurian_genpy/fast
-
-src/controller/controller_tud.o: src/controller/controller_tud.cpp.o
-.PHONY : src/controller/controller_tud.o
+thesis_aurian_gencfg/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/build
+.PHONY : thesis_aurian_gencfg/fast
+
+src/controller/square_vel.o: src/controller/square_vel.cpp.o
+.PHONY : src/controller/square_vel.o
 
 # target to build an object file
-src/controller/controller_tud.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/src/controller/controller_tud.cpp.o
-.PHONY : src/controller/controller_tud.cpp.o
+src/controller/square_vel.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/square_vel.dir/build.make thesis_aurian/CMakeFiles/square_vel.dir/src/controller/square_vel.cpp.o
+.PHONY : src/controller/square_vel.cpp.o
 
-src/controller/controller_tud.i: src/controller/controller_tud.cpp.i
-.PHONY : src/controller/controller_tud.i
+src/controller/square_vel.i: src/controller/square_vel.cpp.i
+.PHONY : src/controller/square_vel.i
 
 # target to preprocess a source file
-src/controller/controller_tud.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/src/controller/controller_tud.cpp.i
-.PHONY : src/controller/controller_tud.cpp.i
+src/controller/square_vel.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/square_vel.dir/build.make thesis_aurian/CMakeFiles/square_vel.dir/src/controller/square_vel.cpp.i
+.PHONY : src/controller/square_vel.cpp.i
 
-src/controller/controller_tud.s: src/controller/controller_tud.cpp.s
-.PHONY : src/controller/controller_tud.s
+src/controller/square_vel.s: src/controller/square_vel.cpp.s
+.PHONY : src/controller/square_vel.s
 
 # target to generate assembly for a file
-src/controller/controller_tud.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/src/controller/controller_tud.cpp.s
-.PHONY : src/controller/controller_tud.cpp.s
+src/controller/square_vel.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/square_vel.dir/build.make thesis_aurian/CMakeFiles/square_vel.dir/src/controller/square_vel.cpp.s
+.PHONY : src/controller/square_vel.cpp.s
 
-src/controller/simple_square_vel.o: src/controller/simple_square_vel.cpp.o
-.PHONY : src/controller/simple_square_vel.o
+src/controller/test_controller.o: src/controller/test_controller.cpp.o
+.PHONY : src/controller/test_controller.o
 
 # target to build an object file
-src/controller/simple_square_vel.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.o
-.PHONY : src/controller/simple_square_vel.cpp.o
+src/controller/test_controller.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/test_controller.dir/build.make thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o
+.PHONY : src/controller/test_controller.cpp.o
 
-src/controller/simple_square_vel.i: src/controller/simple_square_vel.cpp.i
-.PHONY : src/controller/simple_square_vel.i
-
-# target to preprocess a source file
-src/controller/simple_square_vel.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.i
-.PHONY : src/controller/simple_square_vel.cpp.i
-
-src/controller/simple_square_vel.s: src/controller/simple_square_vel.cpp.s
-.PHONY : src/controller/simple_square_vel.s
-
-# target to generate assembly for a file
-src/controller/simple_square_vel.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/src/controller/simple_square_vel.cpp.s
-.PHONY : src/controller/simple_square_vel.cpp.s
-
-src/controller/testcontroller.o: src/controller/testcontroller.cpp.o
-.PHONY : src/controller/testcontroller.o
-
-# target to build an object file
-src/controller/testcontroller.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/src/controller/testcontroller.cpp.o
-.PHONY : src/controller/testcontroller.cpp.o
-
-src/controller/testcontroller.i: src/controller/testcontroller.cpp.i
-.PHONY : src/controller/testcontroller.i
+src/controller/test_controller.i: src/controller/test_controller.cpp.i
+.PHONY : src/controller/test_controller.i
 
 # target to preprocess a source file
-src/controller/testcontroller.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/src/controller/testcontroller.cpp.i
-.PHONY : src/controller/testcontroller.cpp.i
+src/controller/test_controller.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/test_controller.dir/build.make thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.i
+.PHONY : src/controller/test_controller.cpp.i
 
-src/controller/testcontroller.s: src/controller/testcontroller.cpp.s
-.PHONY : src/controller/testcontroller.s
+src/controller/test_controller.s: src/controller/test_controller.cpp.s
+.PHONY : src/controller/test_controller.s
 
 # target to generate assembly for a file
-src/controller/testcontroller.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/src/controller/testcontroller.cpp.s
-.PHONY : src/controller/testcontroller.cpp.s
+src/controller/test_controller.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/test_controller.dir/build.make thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.s
+.PHONY : src/controller/test_controller.cpp.s
 
 # Help Target
 help:
@@ -633,51 +245,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... ardrone_autonomy_generate_messages_cpp"
-	@echo "... ardrone_autonomy_generate_messages_lisp"
-	@echo "... ardrone_autonomy_generate_messages_py"
-	@echo "... controller_tud"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... simple_square_vel"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_py"
+	@echo "... square_vel"
 	@echo "... test"
-	@echo "... testcontroller"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_py"
-	@echo "... thesis_aurian_gencpp"
-	@echo "... thesis_aurian_generate_messages"
-	@echo "... thesis_aurian_generate_messages_cpp"
-	@echo "... thesis_aurian_generate_messages_lisp"
-	@echo "... thesis_aurian_generate_messages_py"
-	@echo "... thesis_aurian_genlisp"
-	@echo "... thesis_aurian_genpy"
-	@echo "... src/controller/controller_tud.o"
-	@echo "... src/controller/controller_tud.i"
-	@echo "... src/controller/controller_tud.s"
-	@echo "... src/controller/simple_square_vel.o"
-	@echo "... src/controller/simple_square_vel.i"
-	@echo "... src/controller/simple_square_vel.s"
-	@echo "... src/controller/testcontroller.o"
-	@echo "... src/controller/testcontroller.i"
-	@echo "... src/controller/testcontroller.s"
+	@echo "... test_controller"
+	@echo "... thesis_aurian_gencfg"
+	@echo "... src/controller/square_vel.o"
+	@echo "... src/controller/square_vel.i"
+	@echo "... src/controller/square_vel.s"
+	@echo "... src/controller/test_controller.o"
+	@echo "... src/controller/test_controller.i"
+	@echo "... src/controller/test_controller.s"
 .PHONY : help
 
 

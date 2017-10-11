@@ -6,6 +6,7 @@ SET(CMAKE_CXX_FLAGS "-std=c++0x")
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+    ardrone_autonomy
     dynamic_reconfigure
     geometry_msgs
     roscpp
@@ -94,7 +95,7 @@ generate_dynamic_reconfigure_options(
 catkin_package(
   INCLUDE_DIRS include
 #  LIBRARIES coop_uv
-  CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs nav_msgs
+  CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs nav_msgs ardrone_autonomy
 #  DEPENDS system_lib
 )
 
@@ -111,21 +112,31 @@ include_directories(${catkin_INCLUDE_DIRS})
 #   src/${PROJECT_NAME}/coop_uv.cpp
 # )
 
+# set(PIDCONTROL_SOURCE_FILES
+#     src/pid_control.cpp
+#     src/controlnode.cpp
+#     src/filtervelocity.cpp
+# )
+# 
+# set(PIDCONTROL_HEADER_FILES
+#     include/ardrone_velocity/controlnode.hpp
+#     include/ardrone_velocity/filtervelocity.hpp
+# )
+
 set(PIDCONTROL_SOURCE_FILES
-    src/pid_control.cpp
-    src/controlnode.cpp
+    src/controller_tud.cpp
     src/filtervelocity.cpp
 )
 
 set(PIDCONTROL_HEADER_FILES
-    include/ardrone_velocity/controlnode.hpp
+    include/ardrone_velocity/controller_tud.hpp
     include/ardrone_velocity/filtervelocity.hpp
 )
 
 
 ## Declare a cpp executable
-add_executable(pid_control ${PIDCONTROL_SOURCE_FILES} ${PIDCONTROL_HEADER_FILES})
-add_executable(test_controller src/test_controller.cpp)
+add_executable(controller_tud ${PIDCONTROL_SOURCE_FILES} ${PIDCONTROL_HEADER_FILES})
+add_executable(test_controller_tud src/test_controller_tud.cpp)
 #add_executable(mainQt src/mainQt.cpp)
 
 ## Add cmake target dependencies of the executable/library
@@ -134,11 +145,11 @@ add_executable(test_controller src/test_controller.cpp)
 #add_dependencies(pid_control ardrone_autonomy)
 #add_dependencies(test_controller ardrone_autonomy)
 
-add_dependencies(pid_control ${PROJECT_NAME}_gencfg)
+add_dependencies(controller_tud ${PROJECT_NAME}_gencfg)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(pid_control ${catkin_LIBRARIES})
-target_link_libraries(test_controller ${catkin_LIBRARIES})
+target_link_libraries(controller_tud ${catkin_LIBRARIES})
+target_link_libraries(test_controller_tud ${catkin_LIBRARIES})
 
 
 #target_link_libraries(mainQt ${catkin_LIBRARIES} ${QT_LIBRARIES})

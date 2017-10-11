@@ -6,10 +6,10 @@
   <!-- Ultrasound frequency (7 or 8). -->
   <arg name="freq" default="8"/>
 
-  <node name="tud_pid_controller" pkg="ardrone_velocity" type="pid_control" output="screen">
+  <node name="tud_pid_controller" pkg="ardrone_velocity" type="controller_tud" output="screen">
   </node>
 
-  <node name="tud_test_controller" pkg="ardrone_velocity" type="test_controller" output="screen">
+  <node name="test_controller_tud" pkg="ardrone_velocity" type="test_controller_tud" output="screen">
   </node>
 
 <node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver"

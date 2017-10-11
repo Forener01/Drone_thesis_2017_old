@@ -26,3 +26,12 @@
 - Régler bugs GitHub 
 
 **S 02/10**
+- Tentatives infructueuses de faire tourner controller_2016
+- Tentatives lancer ardrone_velocity
+- Lecture de ardrone_velocity_ekf
+- 3 jours perdus
+
+**S 09/10**
+- Comprendre l'imbrication de fichier .c/.cpp entre eux
+- Créer code universel pour tester plusieurs contrôleurs différents
+- Adaptation de ardrone_velocity

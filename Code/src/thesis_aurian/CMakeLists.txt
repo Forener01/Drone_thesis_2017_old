@@ -10,9 +10,12 @@ project(thesis_aurian)
 find_package(catkin REQUIRED COMPONENTS
   ardrone_autonomy
   ardrone_velocity
+  dynamic_reconfigure
   geometry_msgs
   roscpp
+  rospy
   message_generation
+  nav_msgs
   std_msgs
 )
 
@@ -71,12 +74,12 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  ardrone_autonomy
-  geometry_msgs
-  std_msgs  # Or other packages containing msgs
-)
+# generate_messages(
+#   DEPENDENCIES
+#   ardrone_autonomy
+#   geometry_msgs
+#   std_msgs  # Or other packages containing msgs
+# )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -97,6 +100,9 @@ generate_messages(
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
+generate_dynamic_reconfigure_options(
+  cfg/dynamic_param_config.cfg
+)
 
 ###################################
 ## catkin specific configuration ##
@@ -108,12 +114,11 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
+INCLUDE_DIRS include
 #  LIBRARIES thesis_aurian
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
-CATKIN_DEPENDS ardrone_autonomy message_runtime
-CATKIN_DEPENDS message_runtime
+CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs nav_msgs ardrone_autonomy message_runtime
 )
 
 ###########
@@ -132,6 +137,16 @@ include_directories(
 #   src/${PROJECT_NAME}/thesis_aurian.cpp
 # )
 
+set(PIDCONTROL_SOURCE_FILES
+    src/controller/controller_tud.cpp
+    src/controller/filtervelocity.cpp
+)
+
+set(PIDCONTROL_HEADER_FILES
+    include/thesis_aurian/controller_tud.hpp
+    include/thesis_aurian/filtervelocity.hpp
+)
+
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
@@ -141,9 +156,10 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/thesis_aurian_node.cpp)
-add_executable(simple_square_vel src/controller/simple_square_vel.cpp)
-add_executable(controller_tud src/controller/controller_tud.cpp)
-add_executable(testcontroller src/controller/testcontroller.cpp)
+add_executable(square_vel src/controller/square_vel.cpp)
+# add_executable(controller_tud ${PIDCONTROL_SOURCE_FILES} ${PIDCONTROL_HEADER_FILES})
+# add_executable(controller_tud src/controller/controller_tud.cpp)
+add_executable(test_controller src/controller/test_controller.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -154,15 +170,18 @@ add_executable(testcontroller src/controller/testcontroller.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-# add_dependencies(trajectories ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(controller_tud ${PROJECT_NAME}_gencfg)
+# add_dependencies(simple_square_vel ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(controller_tud ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(test_controller ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(simple_square_vel ${catkin_LIBRARIES})
-target_link_libraries(controller_tud ${catkin_LIBRARIES})
-target_link_libraries(testcontroller ${catkin_LIBRARIES})
+target_link_libraries(square_vel ${catkin_LIBRARIES})
+# target_link_libraries(controller_tud ${catkin_LIBRARIES})
+target_link_libraries(test_controller ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -211,3 +230,10 @@ target_link_libraries(testcontroller ${catkin_LIBRARIES})
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+##################
+# FOR QT CREATOR
+##################
+file(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/thesis_aurian/*.hpp)
+FILE(GLOB_RECURSE INC_ALL "include/coop_uv_qt/*.hpp")
+FILE(GLOB_RECURSE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/controller/*.cpp)

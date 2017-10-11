@@ -22,6 +22,10 @@ OLD
 - Utiliser ardrone_velocity_ekf (TU Darmstadt)
 - Checker utilisation de ar_nav package
 - Utiliser contrôleur UCL 2016
+- Adapter ardrone_velocity pour contrôle en altitude
+- Faire tourner ardrone_velocity_ekf
+- Adapter ardrone_velocity avec tum_autonomy
+- Adapter ardrone_velocity pour contrôle en position
 
 # Structure Rapport TFE
 - Abstract: 1p

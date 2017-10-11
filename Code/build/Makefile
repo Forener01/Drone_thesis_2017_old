@@ -241,6 +241,58 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/build.make ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -280,6 +332,45 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named ardrone_autonomy_generate_messages_cpp
+
+# Build rule for target.
+ardrone_autonomy_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ardrone_autonomy_generate_messages_cpp
+.PHONY : ardrone_autonomy_generate_messages_cpp
+
+# fast build rule for target.
+ardrone_autonomy_generate_messages_cpp/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build
+.PHONY : ardrone_autonomy_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named ardrone_autonomy_generate_messages_lisp
+
+# Build rule for target.
+ardrone_autonomy_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ardrone_autonomy_generate_messages_lisp
+.PHONY : ardrone_autonomy_generate_messages_lisp
+
+# fast build rule for target.
+ardrone_autonomy_generate_messages_lisp/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build
+.PHONY : ardrone_autonomy_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named ardrone_autonomy_generate_messages_py
+
+# Build rule for target.
+ardrone_autonomy_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ardrone_autonomy_generate_messages_py
+.PHONY : ardrone_autonomy_generate_messages_py
+
+# fast build rule for target.
+ardrone_autonomy_generate_messages_py/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build
+.PHONY : ardrone_autonomy_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named ardrone_velocity_gencfg
 
 # Build rule for target.
@@ -291,6 +382,19 @@ ardrone_velocity_gencfg: cmake_check_build_system
 ardrone_velocity_gencfg/fast:
 	$(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/build.make ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/build
 .PHONY : ardrone_velocity_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named controller_tud
+
+# Build rule for target.
+controller_tud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_tud
+.PHONY : controller_tud
+
+# fast build rule for target.
+controller_tud/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/build
+.PHONY : controller_tud/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_gencfg
@@ -423,19 +527,6 @@ nav_msgs_generate_messages_py/fast:
 .PHONY : nav_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named pid_control
-
-# Build rule for target.
-pid_control: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pid_control
-.PHONY : pid_control
-
-# fast build rule for target.
-pid_control/fast:
-	$(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/build
-.PHONY : pid_control/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -514,6 +605,45 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -553,175 +683,6 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named test_controller
-
-# Build rule for target.
-test_controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_controller
-.PHONY : test_controller
-
-# fast build rule for target.
-test_controller/fast:
-	$(MAKE) -f ardrone_velocity/CMakeFiles/test_controller.dir/build.make ardrone_velocity/CMakeFiles/test_controller.dir/build
-.PHONY : test_controller/fast
-
-#=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
-
-# Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/build.make thesis_aurian/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_cpp
-
-# Build rule for target.
-actionlib_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_lisp
-
-# Build rule for target.
-actionlib_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_py
-
-# Build rule for target.
-actionlib_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named ardrone_autonomy_generate_messages_cpp
-
-# Build rule for target.
-ardrone_autonomy_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ardrone_autonomy_generate_messages_cpp
-.PHONY : ardrone_autonomy_generate_messages_cpp
-
-# fast build rule for target.
-ardrone_autonomy_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build
-.PHONY : ardrone_autonomy_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named ardrone_autonomy_generate_messages_lisp
-
-# Build rule for target.
-ardrone_autonomy_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ardrone_autonomy_generate_messages_lisp
-.PHONY : ardrone_autonomy_generate_messages_lisp
-
-# fast build rule for target.
-ardrone_autonomy_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build
-.PHONY : ardrone_autonomy_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named ardrone_autonomy_generate_messages_py
-
-# Build rule for target.
-ardrone_autonomy_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ardrone_autonomy_generate_messages_py
-.PHONY : ardrone_autonomy_generate_messages_py
-
-# fast build rule for target.
-ardrone_autonomy_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build
-.PHONY : ardrone_autonomy_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named controller_tud
-
-# Build rule for target.
-controller_tud: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_tud
-.PHONY : controller_tud
-
-# fast build rule for target.
-controller_tud/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/controller_tud.dir/build.make thesis_aurian/CMakeFiles/controller_tud.dir/build
-.PHONY : controller_tud/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named simple_square_vel
-
-# Build rule for target.
-simple_square_vel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_square_vel
-.PHONY : simple_square_vel
-
-# fast build rule for target.
-simple_square_vel/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/simple_square_vel.dir/build.make thesis_aurian/CMakeFiles/simple_square_vel.dir/build
-.PHONY : simple_square_vel/fast
-
-#=============================================================================
 # Target rules for targets named std_srvs_generate_messages_cpp
 
 # Build rule for target.
@@ -731,7 +692,7 @@ std_srvs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -744,7 +705,7 @@ std_srvs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -757,21 +718,21 @@ std_srvs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named testcontroller
+# Target rules for targets named test_controller_tud
 
 # Build rule for target.
-testcontroller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testcontroller
-.PHONY : testcontroller
+test_controller_tud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_controller_tud
+.PHONY : test_controller_tud
 
 # fast build rule for target.
-testcontroller/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/testcontroller.dir/build.make thesis_aurian/CMakeFiles/testcontroller.dir/build
-.PHONY : testcontroller/fast
+test_controller_tud/fast:
+	$(MAKE) -f ardrone_velocity/CMakeFiles/test_controller_tud.dir/build.make ardrone_velocity/CMakeFiles/test_controller_tud.dir/build
+.PHONY : test_controller_tud/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
@@ -783,7 +744,7 @@ tf2_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -796,7 +757,7 @@ tf2_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -809,7 +770,7 @@ tf2_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -822,7 +783,7 @@ tf_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 tf_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/tf_generate_messages_cpp.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/build
 .PHONY : tf_generate_messages_cpp/fast
 
 #=============================================================================
@@ -835,7 +796,7 @@ tf_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 tf_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/tf_generate_messages_lisp.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/build
 .PHONY : tf_generate_messages_lisp/fast
 
 #=============================================================================
@@ -848,99 +809,47 @@ tf_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 tf_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/tf_generate_messages_py.dir/build
+	$(MAKE) -f ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named thesis_aurian_gencpp
+# Target rules for targets named square_vel
 
 # Build rule for target.
-thesis_aurian_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_gencpp
-.PHONY : thesis_aurian_gencpp
+square_vel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 square_vel
+.PHONY : square_vel
 
 # fast build rule for target.
-thesis_aurian_gencpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_gencpp.dir/build
-.PHONY : thesis_aurian_gencpp/fast
+square_vel/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/square_vel.dir/build.make thesis_aurian/CMakeFiles/square_vel.dir/build
+.PHONY : square_vel/fast
 
 #=============================================================================
-# Target rules for targets named thesis_aurian_generate_messages
+# Target rules for targets named test_controller
 
 # Build rule for target.
-thesis_aurian_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_generate_messages
-.PHONY : thesis_aurian_generate_messages
+test_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_controller
+.PHONY : test_controller
 
 # fast build rule for target.
-thesis_aurian_generate_messages/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages.dir/build
-.PHONY : thesis_aurian_generate_messages/fast
+test_controller/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/test_controller.dir/build.make thesis_aurian/CMakeFiles/test_controller.dir/build
+.PHONY : test_controller/fast
 
 #=============================================================================
-# Target rules for targets named thesis_aurian_generate_messages_cpp
+# Target rules for targets named thesis_aurian_gencfg
 
 # Build rule for target.
-thesis_aurian_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_generate_messages_cpp
-.PHONY : thesis_aurian_generate_messages_cpp
+thesis_aurian_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_gencfg
+.PHONY : thesis_aurian_gencfg
 
 # fast build rule for target.
-thesis_aurian_generate_messages_cpp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_cpp.dir/build
-.PHONY : thesis_aurian_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named thesis_aurian_generate_messages_lisp
-
-# Build rule for target.
-thesis_aurian_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_generate_messages_lisp
-.PHONY : thesis_aurian_generate_messages_lisp
-
-# fast build rule for target.
-thesis_aurian_generate_messages_lisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_lisp.dir/build
-.PHONY : thesis_aurian_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named thesis_aurian_generate_messages_py
-
-# Build rule for target.
-thesis_aurian_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_generate_messages_py
-.PHONY : thesis_aurian_generate_messages_py
-
-# fast build rule for target.
-thesis_aurian_generate_messages_py/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_generate_messages_py.dir/build
-.PHONY : thesis_aurian_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named thesis_aurian_genlisp
-
-# Build rule for target.
-thesis_aurian_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_genlisp
-.PHONY : thesis_aurian_genlisp
-
-# fast build rule for target.
-thesis_aurian_genlisp/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genlisp.dir/build
-.PHONY : thesis_aurian_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named thesis_aurian_genpy
-
-# Build rule for target.
-thesis_aurian_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thesis_aurian_genpy
-.PHONY : thesis_aurian_genpy
-
-# fast build rule for target.
-thesis_aurian_genpy/fast:
-	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_genpy.dir/build
-.PHONY : thesis_aurian_genpy/fast
+thesis_aurian_gencfg/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/build
+.PHONY : thesis_aurian_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named _ucl_drone_generate_messages_check_deps_DroneRole
@@ -1508,10 +1417,18 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... ardrone_autonomy_generate_messages_cpp"
+	@echo "... ardrone_autonomy_generate_messages_lisp"
+	@echo "... ardrone_autonomy_generate_messages_py"
 	@echo "... ardrone_velocity_gencfg"
+	@echo "... controller_tud"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
@@ -1522,46 +1439,31 @@ help:
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_py"
-	@echo "... pid_control"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... test_controller"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... ardrone_autonomy_generate_messages_cpp"
-	@echo "... ardrone_autonomy_generate_messages_lisp"
-	@echo "... ardrone_autonomy_generate_messages_py"
-	@echo "... controller_tud"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... simple_square_vel"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... testcontroller"
+	@echo "... test_controller_tud"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
-	@echo "... thesis_aurian_gencpp"
-	@echo "... thesis_aurian_generate_messages"
-	@echo "... thesis_aurian_generate_messages_cpp"
-	@echo "... thesis_aurian_generate_messages_lisp"
-	@echo "... thesis_aurian_generate_messages_py"
-	@echo "... thesis_aurian_genlisp"
-	@echo "... thesis_aurian_genpy"
+	@echo "... square_vel"
+	@echo "... test_controller"
+	@echo "... thesis_aurian_gencfg"
 	@echo "... _ucl_drone_generate_messages_check_deps_DroneRole"
 	@echo "... _ucl_drone_generate_messages_check_deps_DroneRoles"
 	@echo "... _ucl_drone_generate_messages_check_deps_KeyPoint"

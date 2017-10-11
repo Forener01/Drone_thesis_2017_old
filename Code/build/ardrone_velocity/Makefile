@@ -150,6 +150,62 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/build.make ardrone_velocity/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
 ardrone_velocity/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 .PHONY : ardrone_velocity/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
@@ -192,6 +248,48 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+ardrone_autonomy_generate_messages_cpp: ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/rule
+.PHONY : ardrone_autonomy_generate_messages_cpp
+
+# fast build rule for target.
+ardrone_autonomy_generate_messages_cpp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_cpp.dir/build
+.PHONY : ardrone_autonomy_generate_messages_cpp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+ardrone_autonomy_generate_messages_lisp: ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/rule
+.PHONY : ardrone_autonomy_generate_messages_lisp
+
+# fast build rule for target.
+ardrone_autonomy_generate_messages_lisp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_lisp.dir/build
+.PHONY : ardrone_autonomy_generate_messages_lisp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule
+
+# Convenience name for target.
+ardrone_autonomy_generate_messages_py: ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/rule
+.PHONY : ardrone_autonomy_generate_messages_py
+
+# fast build rule for target.
+ardrone_autonomy_generate_messages_py/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/ardrone_autonomy_generate_messages_py.dir/build
+.PHONY : ardrone_autonomy_generate_messages_py/fast
+
+# Convenience name for target.
 ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/rule
 .PHONY : ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/rule
@@ -204,6 +302,20 @@ ardrone_velocity_gencfg: ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir
 ardrone_velocity_gencfg/fast:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/build.make ardrone_velocity/CMakeFiles/ardrone_velocity_gencfg.dir/build
 .PHONY : ardrone_velocity_gencfg/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/controller_tud.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/controller_tud.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/controller_tud.dir/rule
+
+# Convenience name for target.
+controller_tud: ardrone_velocity/CMakeFiles/controller_tud.dir/rule
+.PHONY : controller_tud
+
+# fast build rule for target.
+controller_tud/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/build
+.PHONY : controller_tud/fast
 
 # Convenience name for target.
 ardrone_velocity/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
@@ -346,20 +458,6 @@ nav_msgs_generate_messages_py/fast:
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-ardrone_velocity/CMakeFiles/pid_control.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/pid_control.dir/rule
-.PHONY : ardrone_velocity/CMakeFiles/pid_control.dir/rule
-
-# Convenience name for target.
-pid_control: ardrone_velocity/CMakeFiles/pid_control.dir/rule
-.PHONY : pid_control
-
-# fast build rule for target.
-pid_control/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/build
-.PHONY : pid_control/fast
-
-# Convenience name for target.
 ardrone_velocity/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : ardrone_velocity/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -444,6 +542,48 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 ardrone_velocity/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : ardrone_velocity/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -486,49 +626,175 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-ardrone_velocity/CMakeFiles/test_controller.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/test_controller.dir/rule
-.PHONY : ardrone_velocity/CMakeFiles/test_controller.dir/rule
+ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-test_controller: ardrone_velocity/CMakeFiles/test_controller.dir/rule
-.PHONY : test_controller
+std_srvs_generate_messages_cpp: ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : std_srvs_generate_messages_cpp
 
 # fast build rule for target.
-test_controller/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller.dir/build.make ardrone_velocity/CMakeFiles/test_controller.dir/build
-.PHONY : test_controller/fast
+std_srvs_generate_messages_cpp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
-src/controlnode.o: src/controlnode.cpp.o
-.PHONY : src/controlnode.o
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/test_controller_tud.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/test_controller_tud.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/test_controller_tud.dir/rule
+
+# Convenience name for target.
+test_controller_tud: ardrone_velocity/CMakeFiles/test_controller_tud.dir/rule
+.PHONY : test_controller_tud
+
+# fast build rule for target.
+test_controller_tud/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller_tud.dir/build.make ardrone_velocity/CMakeFiles/test_controller_tud.dir/build
+.PHONY : test_controller_tud/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/build.make ardrone_velocity/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/build.make ardrone_velocity/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+# Convenience name for target.
+ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/build.make ardrone_velocity/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+src/controller_tud.o: src/controller_tud.cpp.o
+.PHONY : src/controller_tud.o
 
 # target to build an object file
-src/controlnode.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/controlnode.cpp.o
-.PHONY : src/controlnode.cpp.o
+src/controller_tud.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/src/controller_tud.cpp.o
+.PHONY : src/controller_tud.cpp.o
 
-src/controlnode.i: src/controlnode.cpp.i
-.PHONY : src/controlnode.i
+src/controller_tud.i: src/controller_tud.cpp.i
+.PHONY : src/controller_tud.i
 
 # target to preprocess a source file
-src/controlnode.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/controlnode.cpp.i
-.PHONY : src/controlnode.cpp.i
+src/controller_tud.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/src/controller_tud.cpp.i
+.PHONY : src/controller_tud.cpp.i
 
-src/controlnode.s: src/controlnode.cpp.s
-.PHONY : src/controlnode.s
+src/controller_tud.s: src/controller_tud.cpp.s
+.PHONY : src/controller_tud.s
 
 # target to generate assembly for a file
-src/controlnode.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/controlnode.cpp.s
-.PHONY : src/controlnode.cpp.s
+src/controller_tud.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/src/controller_tud.cpp.s
+.PHONY : src/controller_tud.cpp.s
 
 src/filtervelocity.o: src/filtervelocity.cpp.o
 .PHONY : src/filtervelocity.o
 
 # target to build an object file
 src/filtervelocity.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/filtervelocity.cpp.o
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/src/filtervelocity.cpp.o
 .PHONY : src/filtervelocity.cpp.o
 
 src/filtervelocity.i: src/filtervelocity.cpp.i
@@ -536,7 +802,7 @@ src/filtervelocity.i: src/filtervelocity.cpp.i
 
 # target to preprocess a source file
 src/filtervelocity.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/filtervelocity.cpp.i
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/src/filtervelocity.cpp.i
 .PHONY : src/filtervelocity.cpp.i
 
 src/filtervelocity.s: src/filtervelocity.cpp.s
@@ -544,56 +810,32 @@ src/filtervelocity.s: src/filtervelocity.cpp.s
 
 # target to generate assembly for a file
 src/filtervelocity.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/filtervelocity.cpp.s
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/controller_tud.dir/build.make ardrone_velocity/CMakeFiles/controller_tud.dir/src/filtervelocity.cpp.s
 .PHONY : src/filtervelocity.cpp.s
 
-src/pid_control.o: src/pid_control.cpp.o
-.PHONY : src/pid_control.o
+src/test_controller_tud.o: src/test_controller_tud.cpp.o
+.PHONY : src/test_controller_tud.o
 
 # target to build an object file
-src/pid_control.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/pid_control.cpp.o
-.PHONY : src/pid_control.cpp.o
+src/test_controller_tud.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller_tud.dir/build.make ardrone_velocity/CMakeFiles/test_controller_tud.dir/src/test_controller_tud.cpp.o
+.PHONY : src/test_controller_tud.cpp.o
 
-src/pid_control.i: src/pid_control.cpp.i
-.PHONY : src/pid_control.i
-
-# target to preprocess a source file
-src/pid_control.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/pid_control.cpp.i
-.PHONY : src/pid_control.cpp.i
-
-src/pid_control.s: src/pid_control.cpp.s
-.PHONY : src/pid_control.s
-
-# target to generate assembly for a file
-src/pid_control.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/pid_control.dir/build.make ardrone_velocity/CMakeFiles/pid_control.dir/src/pid_control.cpp.s
-.PHONY : src/pid_control.cpp.s
-
-src/test_controller.o: src/test_controller.cpp.o
-.PHONY : src/test_controller.o
-
-# target to build an object file
-src/test_controller.cpp.o:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller.dir/build.make ardrone_velocity/CMakeFiles/test_controller.dir/src/test_controller.cpp.o
-.PHONY : src/test_controller.cpp.o
-
-src/test_controller.i: src/test_controller.cpp.i
-.PHONY : src/test_controller.i
+src/test_controller_tud.i: src/test_controller_tud.cpp.i
+.PHONY : src/test_controller_tud.i
 
 # target to preprocess a source file
-src/test_controller.cpp.i:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller.dir/build.make ardrone_velocity/CMakeFiles/test_controller.dir/src/test_controller.cpp.i
-.PHONY : src/test_controller.cpp.i
+src/test_controller_tud.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller_tud.dir/build.make ardrone_velocity/CMakeFiles/test_controller_tud.dir/src/test_controller_tud.cpp.i
+.PHONY : src/test_controller_tud.cpp.i
 
-src/test_controller.s: src/test_controller.cpp.s
-.PHONY : src/test_controller.s
+src/test_controller_tud.s: src/test_controller_tud.cpp.s
+.PHONY : src/test_controller_tud.s
 
 # target to generate assembly for a file
-src/test_controller.cpp.s:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller.dir/build.make ardrone_velocity/CMakeFiles/test_controller.dir/src/test_controller.cpp.s
-.PHONY : src/test_controller.cpp.s
+src/test_controller_tud.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ardrone_velocity/CMakeFiles/test_controller_tud.dir/build.make ardrone_velocity/CMakeFiles/test_controller_tud.dir/src/test_controller_tud.cpp.s
+.PHONY : src/test_controller_tud.cpp.s
 
 # Help Target
 help:
@@ -601,10 +843,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... ardrone_autonomy_generate_messages_cpp"
+	@echo "... ardrone_autonomy_generate_messages_lisp"
+	@echo "... ardrone_autonomy_generate_messages_py"
 	@echo "... ardrone_velocity_gencfg"
+	@echo "... controller_tud"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
@@ -620,7 +870,6 @@ help:
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_py"
-	@echo "... pid_control"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -628,23 +877,32 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_py"
 	@echo "... test"
-	@echo "... test_controller"
-	@echo "... src/controlnode.o"
-	@echo "... src/controlnode.i"
-	@echo "... src/controlnode.s"
+	@echo "... test_controller_tud"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... tf_generate_messages_py"
+	@echo "... src/controller_tud.o"
+	@echo "... src/controller_tud.i"
+	@echo "... src/controller_tud.s"
 	@echo "... src/filtervelocity.o"
 	@echo "... src/filtervelocity.i"
 	@echo "... src/filtervelocity.s"
-	@echo "... src/pid_control.o"
-	@echo "... src/pid_control.i"
-	@echo "... src/pid_control.s"
-	@echo "... src/test_controller.o"
-	@echo "... src/test_controller.i"
-	@echo "... src/test_controller.s"
+	@echo "... src/test_controller_tud.o"
+	@echo "... src/test_controller_tud.i"
+	@echo "... src/test_controller_tud.s"
 .PHONY : help
 
 
