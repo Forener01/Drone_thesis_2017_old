@@ -35,3 +35,6 @@
 - Comprendre l'imbrication de fichier .c/.cpp entre eux
 - Créer code universel pour tester plusieurs contrôleurs différents
 - Adaptation de ardrone_velocity
+- Prise en main de rosconsole 
+- Prise en main de rqt_console 
+- 

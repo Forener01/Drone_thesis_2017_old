@@ -52,10 +52,6 @@ ardrone_velocity/controller_tud.hpp
 random
 -
 
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/filtervelocity.cpp
-ardrone_velocity/filtervelocity.hpp
-/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/ardrone_velocity/src/ardrone_velocity/filtervelocity.hpp
-
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
 -

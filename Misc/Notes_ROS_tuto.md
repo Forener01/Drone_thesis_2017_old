@@ -29,7 +29,9 @@ lists. rosparam uses the YAML markup language for syntax.
   - ctrl + c: generates an interrupt signal.
   - ctrl + z: suspend the process, allowing it to be resumed at a later point.
   - ctrl + d: sends an end-of-file signal.
-
+- If ros cannot start due to an invisible already running ros session, use the following commands:
+  - killall -9 roscore
+  - killall -9 rosmaster
 
 # Rospack et log
 - Rospack gives info about a package => # rospack find [package_name]
@@ -101,6 +103,8 @@ For a specific rate: ROS_DEBUG_STREAM_THROTTLE( 0 . 1 ,
 
 - Size taken by ROS logs: rosclean check
 Deleting them with: rosclean purge
+
+rosservice call /node-name/set_logger_level ros.package-name level
 
 # roslaunch
 Starts nodes as defined in a launch file.

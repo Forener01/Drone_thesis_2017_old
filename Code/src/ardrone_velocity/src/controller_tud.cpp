@@ -157,14 +157,20 @@ void Controller_TUD::velocity_control(void) {
   cmd_vel_out.linear.y = std::max(cmd_vel_out.linear.y, -1.0);
 
   // Debugging information
-  // ROS_INFO("d_Time  : %f", dt.toSec());
-  // ROS_INFO("VelRef: %f", m_current_command.linear.x);
-  // ROS_INFO("Vel   : %f", m_odo_msg.twist.twist.linear.x);
-  // ROS_INFO("Error : %f", error_x);
-  // ROS_INFO("Cmd   : %f", cmd_vel_out.angular.z);
+  double period = 0.25; // in unit of s
+  ROS_DEBUG_THROTTLE(period, "d_Time  : %f", dt.toSec());
+  ROS_DEBUG_THROTTLE(period, "VelRef_x: %f", m_current_command.linear.x);
+  ROS_DEBUG_THROTTLE(period, "VelRef_y: %f", m_current_command.linear.y);
+  // ROS_INFO("VelOdo : %f", m_odo_msg.twist.twist.linear.x);
+  ROS_DEBUG_THROTTLE(period, "Error_x : %f", error_x);
+  ROS_DEBUG_THROTTLE(period, "Error_y : %f", error_y);
+  ROS_DEBUG_THROTTLE(period, "cmd_vel_out_x : %f", cmd_vel_out.angular.x);
+  ROS_DEBUG_THROTTLE(period, "cmd_vel_out_y : %f", cmd_vel_out.angular.y);
+  // ROS_INFO("cmd_vel_out_z : %f", cmd_vel_out.angular.z);
   // ROS_INFO("pterm | iterm | dterm   : %f | %f | %f", m_Kp_x*p_term_x,
   // m_Kp_x*m_Ki_x*m_i_term_x, m_Kp_x*m_Kd_x*d_term_x);
-  // ROS_INFO("------------------------------------------------------");
+  ROS_DEBUG_THROTTLE(period,
+                     "------------------------------------------------------");
 
   // We publish the command
   veloutPID_pub.publish(cmd_vel_out);
