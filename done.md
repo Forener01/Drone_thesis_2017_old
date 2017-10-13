@@ -37,4 +37,4 @@
 - Adaptation de ardrone_velocity
 - Prise en main de rosconsole 
 - Prise en main de rqt_console 
-- 
+- Tentatives d'adaptation de ardrone_velocity_ekf

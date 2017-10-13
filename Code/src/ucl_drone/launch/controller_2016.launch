@@ -64,7 +64,7 @@
       <param name="drone_prefix" value="motherboard1/"/>
   </node>
 
-  <node name="ucl_drone_path_planning" pkg="ucl_drone" type="path_planning_custom" output="screen">
+  <node name="ucl_drone_path_planning" pkg="ucl_drone" type="path_planning" output="screen">
     <param name="drone_prefix" value="motherboard1/"/>
   </node>
 

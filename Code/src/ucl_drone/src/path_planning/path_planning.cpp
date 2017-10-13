@@ -428,21 +428,21 @@ int main(int argc, char **argv) {
     // Test of command for the report.
     // else if (myPath.lastStrategyReceived.type == 8.0)
     // {
-    ros::Duration(20).sleep();
+    ros::Duration(10).sleep();
     ROS_INFO_STREAM("WORKING !!");
     myPath.takeoff = true;
-    myPath.SetRef(0.0, 0.0, 1.0, 0.0);
+    myPath.SetRef(0.0, 0.0, 0.0, 0.0);
     myPath.publish_poseref();
-    ros::Duration(15).sleep();
-    myPath.SetRef(2.0, 0.0, 1.0, 0.0);
+    ros::Duration(10).sleep();
+    myPath.SetRef(0.0, 2.0, 0.0, 0.0);
     myPath.publish_poseref();
-    ros::Duration(35).sleep();
-    myPath.SetRef(0.0, 0.0, 1.0, 0.0);
+    ros::Duration(30).sleep();
+    myPath.SetRef(0.0, 0.0, 0.0, 0.0);
     myPath.publish_poseref();
-    ros::Duration(35).sleep();
-    myPath.SetRef(-2.0, 0.0, 1.0, 0.0);
+    ros::Duration(30).sleep();
+    myPath.SetRef(-2.0, 0.0, 0.0, 0.0);
     myPath.publish_poseref();
-    ros::Duration(35).sleep();
+    ros::Duration(30).sleep();
     // }
 
     TOC(path, "path planning");

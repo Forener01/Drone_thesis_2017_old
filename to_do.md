@@ -14,18 +14,29 @@ OLD
 - utiliser l'interface graphique
 - Comparer 2016 perf avec ArUco markers pose estimation
 - ArUco Markers with ArUco library (pas assez flexible pour l'objectif à long terme)
+- Check source: PIG Guidelines
+  - http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID
+  - http://ieeexplore.ieee.org/document/7402144/?reload=true
+  - https://en.wikipedia.org/wiki/PID_controller#Manual_tuning
+
+- Odometers wrappers
+  - www.ros.org/wiki/viso2_ros 
+  - www.ros.org/wiki/fovis_ros
 
 # A faire
 - Checker refs.md
-- Recherche détection contour et filtre couleur
-- Utiliser ardrone_velocity package
-- Utiliser ardrone_velocity_ekf (TU Darmstadt)
 - Checker utilisation de ar_nav package
+- Checker tum_autonomy
+
+- Envoyer mail à Tobias
+
+- Recherche détection contour et filtre couleur
+
+- Utiliser ardrone_velocity_ekf (TU Darmstadt)
 - Utiliser contrôleur UCL 2016
-- Adapter ardrone_velocity pour contrôle en altitude
-- Faire tourner ardrone_velocity_ekf
-- Adapter ardrone_velocity avec tum_autonomy
-- Adapter ardrone_velocity pour contrôle en position
+
+- Adapter ardrone_velocity pour contrôle en position 
+- Adapter ardrone_velocity pour contrôle en vitesse altitude
 
 # Structure Rapport TFE
 - Abstract: 1p

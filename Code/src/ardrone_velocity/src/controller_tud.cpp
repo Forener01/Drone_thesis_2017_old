@@ -161,7 +161,7 @@ void Controller_TUD::velocity_control(void) {
   ROS_DEBUG_THROTTLE(period, "d_Time  : %f", dt.toSec());
   ROS_DEBUG_THROTTLE(period, "VelRef_x: %f", m_current_command.linear.x);
   ROS_DEBUG_THROTTLE(period, "VelRef_y: %f", m_current_command.linear.y);
-  // ROS_INFO("VelOdo : %f", m_odo_msg.twist.twist.linear.x);
+  // ROS_DEBUG("VelOdo : %f", m_odo_msg.twist.twist.linear.x);
   ROS_DEBUG_THROTTLE(period, "Error_x : %f", error_x);
   ROS_DEBUG_THROTTLE(period, "Error_y : %f", error_y);
   ROS_DEBUG_THROTTLE(period, "cmd_vel_out_x : %f", cmd_vel_out.angular.x);

@@ -154,12 +154,13 @@ void PoseEstimator::publish_pose() {
   ucl_drone::Pose3D pose_msg;
   bool fusion_is_ok = false;
   if (this->use_visual_pose) {
-	  ROS_INFO_STREAM_ONCE("Visual pose used !");
-    //fusion_is_ok = queuePoseFusion(pose_msg);
+    ROS_INFO_STREAM_ONCE("Visual poseCopy used !");
+    // fusion_is_ok = queuePoseFusion(pose_msg);
     fusion_is_ok = poseCopy(pose_msg);
   } else {
-	  ROS_INFO_STREAM_ONCE("Visual pose not used !");
-    fusion_is_ok = poseFusion(pose_msg);
+    ROS_INFO_STREAM_ONCE("Visual pose not used !");
+    // fusion_is_ok = poseFusion(pose_msg);
+    fusion_is_ok = poseCopy(pose_msg);
   }
 
   // publish
@@ -403,8 +404,8 @@ int main(int argc, char **argv) {
   ROS_DEBUG("pose estimation initialized");
   /*while (!myPose.odometry_publishing && ros::ok())
   {
-	ros::spinOnce();
-	r.sleep();
+        ros::spinOnce();
+        r.sleep();
   }*/
   ros::Duration(10).sleep();
   ROS_INFO_STREAM("pose_estimation node started!");
@@ -412,7 +413,7 @@ int main(int argc, char **argv) {
   myPose.doFlatTrim();
   myPose.doReset();
   ROS_DEBUG("reset done");
-	
+
   while (ros::ok()) {
     TIC(pose);
     myPose.publish_pose();

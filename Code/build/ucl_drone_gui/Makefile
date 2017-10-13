@@ -150,20 +150,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ucl_drone_gui/CMakeFiles/roslint.dir/rule:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone_gui/CMakeFiles/roslint.dir/rule
-.PHONY : ucl_drone_gui/CMakeFiles/roslint.dir/rule
-
-# Convenience name for target.
-roslint: ucl_drone_gui/CMakeFiles/roslint.dir/rule
-.PHONY : roslint
-
-# fast build rule for target.
-roslint/fast:
-	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f ucl_drone_gui/CMakeFiles/roslint.dir/build.make ucl_drone_gui/CMakeFiles/roslint.dir/build
-.PHONY : roslint/fast
-
-# Convenience name for target.
 ucl_drone_gui/CMakeFiles/roslint_ucl_drone_gui.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 ucl_drone_gui/CMakeFiles/roslint_ucl_drone_gui.dir/rule
 .PHONY : ucl_drone_gui/CMakeFiles/roslint_ucl_drone_gui.dir/rule
@@ -251,7 +237,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roslint"
 	@echo "... roslint_ucl_drone_gui"
 	@echo "... test"
 	@echo "... ucl_drone_gui"
