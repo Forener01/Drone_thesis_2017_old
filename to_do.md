@@ -23,6 +23,9 @@ OLD
   - www.ros.org/wiki/viso2_ros 
   - www.ros.org/wiki/fovis_ros
 
+- GetMap service from nav_msgs
+- Noeud spécifique aux infos du drone 
+
 # A faire
 - Checker refs.md
 - Checker utilisation de ar_nav package

@@ -219,6 +219,8 @@ int main(int argc, char **argv) {
   Controller_TUD controlnode;
   ros::Rate loop_rate(2000);
 
+  ROS_INFO_STREAM("controller_tud node started!");
+
   while (ros::ok()) {
     ros::spinOnce();
     loop_rate.sleep();

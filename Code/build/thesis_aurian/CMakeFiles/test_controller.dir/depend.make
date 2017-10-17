@@ -4,6 +4,9 @@
 thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/src/thesis_aurian/src/controller/test_controller.cpp
 thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
+thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
+thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
+thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Quaternion.h
 thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Twist.h
 thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 thesis_aurian/CMakeFiles/test_controller.dir/src/controller/test_controller.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h

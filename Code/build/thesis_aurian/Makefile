@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+thesis_aurian/CMakeFiles/controller_2016.dir/rule:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/controller_2016.dir/rule
+.PHONY : thesis_aurian/CMakeFiles/controller_2016.dir/rule
+
+# Convenience name for target.
+controller_2016: thesis_aurian/CMakeFiles/controller_2016.dir/rule
+.PHONY : controller_2016
+
+# fast build rule for target.
+controller_2016/fast:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_2016.dir/build.make thesis_aurian/CMakeFiles/controller_2016.dir/build
+.PHONY : controller_2016/fast
+
+# Convenience name for target.
 thesis_aurian/CMakeFiles/square_vel.dir/rule:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f CMakeFiles/Makefile2 thesis_aurian/CMakeFiles/square_vel.dir/rule
 .PHONY : thesis_aurian/CMakeFiles/square_vel.dir/rule
@@ -190,6 +204,30 @@ thesis_aurian_gencfg: thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/rule
 thesis_aurian_gencfg/fast:
 	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/build.make thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/build
 .PHONY : thesis_aurian_gencfg/fast
+
+src/controller/controller_2016.o: src/controller/controller_2016.cpp.o
+.PHONY : src/controller/controller_2016.o
+
+# target to build an object file
+src/controller/controller_2016.cpp.o:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_2016.dir/build.make thesis_aurian/CMakeFiles/controller_2016.dir/src/controller/controller_2016.cpp.o
+.PHONY : src/controller/controller_2016.cpp.o
+
+src/controller/controller_2016.i: src/controller/controller_2016.cpp.i
+.PHONY : src/controller/controller_2016.i
+
+# target to preprocess a source file
+src/controller/controller_2016.cpp.i:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_2016.dir/build.make thesis_aurian/CMakeFiles/controller_2016.dir/src/controller/controller_2016.cpp.i
+.PHONY : src/controller/controller_2016.cpp.i
+
+src/controller/controller_2016.s: src/controller/controller_2016.cpp.s
+.PHONY : src/controller/controller_2016.s
+
+# target to generate assembly for a file
+src/controller/controller_2016.cpp.s:
+	cd /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build && $(MAKE) -f thesis_aurian/CMakeFiles/controller_2016.dir/build.make thesis_aurian/CMakeFiles/controller_2016.dir/src/controller/controller_2016.cpp.s
+.PHONY : src/controller/controller_2016.cpp.s
 
 src/controller/square_vel.o: src/controller/square_vel.cpp.o
 .PHONY : src/controller/square_vel.o
@@ -245,6 +283,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... controller_2016"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -255,6 +294,9 @@ help:
 	@echo "... test"
 	@echo "... test_controller"
 	@echo "... thesis_aurian_gencfg"
+	@echo "... src/controller/controller_2016.o"
+	@echo "... src/controller/controller_2016.i"
+	@echo "... src/controller/controller_2016.s"
 	@echo "... src/controller/square_vel.o"
 	@echo "... src/controller/square_vel.i"
 	@echo "... src/controller/square_vel.s"

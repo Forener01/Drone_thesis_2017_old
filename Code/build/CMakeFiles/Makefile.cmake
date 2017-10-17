@@ -425,6 +425,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "robot_localization/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "robot_localization/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "robot_localization/CMakeFiles/uuid_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "thesis_aurian/CMakeFiles/controller_2016.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/square_vel.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/test_controller.dir/DependInfo.cmake"
   "thesis_aurian/CMakeFiles/thesis_aurian_gencfg.dir/DependInfo.cmake"

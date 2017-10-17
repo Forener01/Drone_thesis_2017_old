@@ -1294,6 +1294,19 @@ uuid_msgs_generate_messages_py/fast:
 .PHONY : uuid_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named controller_2016
+
+# Build rule for target.
+controller_2016: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_2016
+.PHONY : controller_2016
+
+# fast build rule for target.
+controller_2016/fast:
+	$(MAKE) -f thesis_aurian/CMakeFiles/controller_2016.dir/build.make thesis_aurian/CMakeFiles/controller_2016.dir/build
+.PHONY : controller_2016/fast
+
+#=============================================================================
 # Target rules for targets named square_vel
 
 # Build rule for target.
@@ -1966,6 +1979,7 @@ help:
 	@echo "... uuid_msgs_generate_messages_cpp"
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... controller_2016"
 	@echo "... square_vel"
 	@echo "... test_controller"
 	@echo "... thesis_aurian_gencfg"

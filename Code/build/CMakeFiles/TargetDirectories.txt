@@ -28,6 +28,7 @@
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/CMakeFiles/clean_test_results.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/computer_vision.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/controller.dir
+/home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/thesis_aurian/CMakeFiles/controller_2016.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ucl_drone/CMakeFiles/controller_custom.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity/CMakeFiles/controller_tud.dir
 /home/laboinmastudent/Bureau/Drone_thesis_2017/Code/build/ardrone_velocity_ekf/CMakeFiles/coordinate_transform.dir
