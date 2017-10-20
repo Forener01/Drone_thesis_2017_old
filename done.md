@@ -38,3 +38,7 @@
 - Prise en main de rosconsole 
 - Prise en main de rqt_console 
 - Tentatives d'adaptation de ardrone_velocity_ekf
+
+**S 16/10**
+- Essai controller_2016: pas calibré pour odometry topic uniquement
+- Développer outil de débug de topic

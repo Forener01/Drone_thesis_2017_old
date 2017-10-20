@@ -104,7 +104,7 @@ int main(int argc, char **argv) {
   // Final step
   ROS_INFO_STREAM_ONCE("The drone just finished !");
   hover();
-  ros::Duration(sleeptime).sleep();
+  ros::Duration(5.0).sleep();
   land();
   ROS_INFO_STREAM_ONCE("The drone just landed !");
 
