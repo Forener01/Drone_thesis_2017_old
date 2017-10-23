@@ -27,8 +27,6 @@ OLD
 - Noeud spécifique aux infos du drone 
 
 # A faire
-- régler pblm string char dans test_controller.cpp
-
 - Checker refs.md
 - Checker utilisation de ar_nav package
 - Checker tum_autonomy

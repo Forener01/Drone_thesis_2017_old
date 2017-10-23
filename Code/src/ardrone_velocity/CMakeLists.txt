@@ -117,7 +117,7 @@ include_directories(${catkin_INCLUDE_DIRS})
 #     src/controlnode.cpp
 #     src/filtervelocity.cpp
 # )
-# 
+#
 # set(PIDCONTROL_HEADER_FILES
 #     include/ardrone_velocity/controlnode.hpp
 #     include/ardrone_velocity/filtervelocity.hpp
@@ -137,6 +137,7 @@ set(PIDCONTROL_HEADER_FILES
 ## Declare a cpp executable
 add_executable(controller_tud ${PIDCONTROL_SOURCE_FILES} ${PIDCONTROL_HEADER_FILES})
 add_executable(test_controller_tud src/test_controller_tud.cpp)
+add_executable(path_planning src/path_planning.cpp)
 #add_executable(mainQt src/mainQt.cpp)
 
 ## Add cmake target dependencies of the executable/library
@@ -146,10 +147,12 @@ add_executable(test_controller_tud src/test_controller_tud.cpp)
 #add_dependencies(test_controller ardrone_autonomy)
 
 add_dependencies(controller_tud ${PROJECT_NAME}_gencfg)
+add_dependencies(path_planning ${PROJECT_NAME}_gencfg)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(controller_tud ${catkin_LIBRARIES})
 target_link_libraries(test_controller_tud ${catkin_LIBRARIES})
+target_link_libraries(path_planning ${catkin_LIBRARIES})
 
 
 #target_link_libraries(mainQt ${catkin_LIBRARIES} ${QT_LIBRARIES})
